@@ -1,0 +1,1431 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		273F2BA29ABF18145941304E /* Pods_CarBeacon.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2AB2AE0C26F5F9C9410E3C43 /* Pods_CarBeacon.framework */; };
+		5BE73F7728D8A53620EA822F /* Pods_CarBeaconUnitTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9781EEA2F3A432AF5F526E23 /* Pods_CarBeaconUnitTests.framework */; };
+		786CED511BD3E7B8003786BB /* OTMObservationsManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 786CED501BD3E7B8003786BB /* OTMObservationsManager.m */; };
+		786CED521BD3E7B8003786BB /* OTMObservationsManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 786CED501BD3E7B8003786BB /* OTMObservationsManager.m */; };
+		786CED6C1BD3F0D7003786BB /* ISDisclosureButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 786CED6B1BD3F0D7003786BB /* ISDisclosureButton.m */; };
+		786CED6E1BD40424003786BB /* OTMMapViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A9F746D51B8E03EE005B5836 /* OTMMapViewController.m */; };
+		786CED6F1BD40425003786BB /* OTMMapViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A9F746D51B8E03EE005B5836 /* OTMMapViewController.m */; };
+		786CED761BD40514003786BB /* ISKeychainTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 786CED711BD40514003786BB /* ISKeychainTest.m */; };
+		786CED781BD40514003786BB /* ISNotesManagerTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 786CED721BD40514003786BB /* ISNotesManagerTest.m */; };
+		786CED7A1BD40514003786BB /* NSBundleIdentifierTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 786CED731BD40514003786BB /* NSBundleIdentifierTest.m */; };
+		786CED7C1BD40514003786BB /* NSStringURLEncodingTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 786CED741BD40514003786BB /* NSStringURLEncodingTest.m */; };
+		786CED7D1BD40573003786BB /* ISKeychainTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 786CED711BD40514003786BB /* ISKeychainTest.m */; };
+		786CED7E1BD40573003786BB /* ISNotesManagerTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 786CED721BD40514003786BB /* ISNotesManagerTest.m */; };
+		786CED7F1BD40573003786BB /* NSBundleIdentifierTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 786CED731BD40514003786BB /* NSBundleIdentifierTest.m */; };
+		786CED801BD40573003786BB /* NSStringURLEncodingTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 786CED741BD40514003786BB /* NSStringURLEncodingTest.m */; };
+		7878D8931BD406F5009F5C29 /* OTMLocationManager.m in Sources */ = {isa = PBXBuildFile; fileRef = A9EB2F101BC4509D00971F6B /* OTMLocationManager.m */; };
+		78E9E6A61B961A1E00154009 /* ISAnimator.m in Sources */ = {isa = PBXBuildFile; fileRef = 78E9E6A51B961A1E00154009 /* ISAnimator.m */; };
+		78E9E6AA1B961F4E00154009 /* ISRevealAndMoveAnimator.m in Sources */ = {isa = PBXBuildFile; fileRef = 78E9E6A91B961F4E00154009 /* ISRevealAndMoveAnimator.m */; };
+		78E9E6AE1B9621FA00154009 /* ISInfoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 78E9E6AD1B9621FA00154009 /* ISInfoViewController.m */; };
+		78E9E6B21B962F8100154009 /* ISBackgroundColourAnimator.m in Sources */ = {isa = PBXBuildFile; fileRef = 78E9E6B11B962F8100154009 /* ISBackgroundColourAnimator.m */; };
+		812A555B20B07712508C568A /* Pods_CarBeaconTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9CB67B12594F6D5F917A80C6 /* Pods_CarBeaconTests.framework */; };
+		A93091E21BE1529900F451A2 /* CarPin.xib in Resources */ = {isa = PBXBuildFile; fileRef = A93091E01BE1529900F451A2 /* CarPin.xib */; };
+		A93091E61BE152EC00F451A2 /* OTMCarPinAnnotationView.m in Sources */ = {isa = PBXBuildFile; fileRef = A93091E51BE152EC00F451A2 /* OTMCarPinAnnotationView.m */; };
+		A93091E71BE152EC00F451A2 /* OTMCarPinAnnotationView.m in Sources */ = {isa = PBXBuildFile; fileRef = A93091E51BE152EC00F451A2 /* OTMCarPinAnnotationView.m */; };
+		A93091EA1BE15BB700F451A2 /* OTMBeaconsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A93091E91BE15BB700F451A2 /* OTMBeaconsViewController.m */; };
+		A93091EB1BE15BB700F451A2 /* OTMBeaconsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A93091E91BE15BB700F451A2 /* OTMBeaconsViewController.m */; };
+		A93091EE1BE15C0C00F451A2 /* UIImage+Tint.m in Sources */ = {isa = PBXBuildFile; fileRef = A93091ED1BE15C0C00F451A2 /* UIImage+Tint.m */; };
+		A93091EF1BE15C0C00F451A2 /* UIImage+Tint.m in Sources */ = {isa = PBXBuildFile; fileRef = A93091ED1BE15C0C00F451A2 /* UIImage+Tint.m */; };
+		A93091F11BE1B92500F451A2 /* LicensePlate.ttf in Resources */ = {isa = PBXBuildFile; fileRef = A93091F01BE1B92500F451A2 /* LicensePlate.ttf */; };
+		A93091F21BE1B92500F451A2 /* LicensePlate.ttf in Resources */ = {isa = PBXBuildFile; fileRef = A93091F01BE1B92500F451A2 /* LicensePlate.ttf */; };
+		A93091F51BE26E1000F451A2 /* OTMBeaconsViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = A93091F41BE26E1000F451A2 /* OTMBeaconsViewCell.m */; };
+		A93091F61BE26E1000F451A2 /* OTMBeaconsViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = A93091F41BE26E1000F451A2 /* OTMBeaconsViewCell.m */; };
+		A93092021BE28E3600F451A2 /* OTMBeaconConfigurationService.m in Sources */ = {isa = PBXBuildFile; fileRef = A93091FD1BE28E3600F451A2 /* OTMBeaconConfigurationService.m */; };
+		A93092031BE28E3600F451A2 /* OTMBeaconConfigurationService.m in Sources */ = {isa = PBXBuildFile; fileRef = A93091FD1BE28E3600F451A2 /* OTMBeaconConfigurationService.m */; };
+		A93092041BE28E3600F451A2 /* OTMBeaconIdentificationPort.m in Sources */ = {isa = PBXBuildFile; fileRef = A93091FF1BE28E3600F451A2 /* OTMBeaconIdentificationPort.m */; };
+		A93092051BE28E3600F451A2 /* OTMBeaconIdentificationPort.m in Sources */ = {isa = PBXBuildFile; fileRef = A93091FF1BE28E3600F451A2 /* OTMBeaconIdentificationPort.m */; };
+		A93092061BE28E3600F451A2 /* OTMBeaconConfigurationPort.m in Sources */ = {isa = PBXBuildFile; fileRef = A93092011BE28E3600F451A2 /* OTMBeaconConfigurationPort.m */; };
+		A93092071BE28E3600F451A2 /* OTMBeaconConfigurationPort.m in Sources */ = {isa = PBXBuildFile; fileRef = A93092011BE28E3600F451A2 /* OTMBeaconConfigurationPort.m */; };
+		A930920B1BE28FA800F451A2 /* OTMBeaconIntegrationTest.m in Sources */ = {isa = PBXBuildFile; fileRef = A93092081BE28E4E00F451A2 /* OTMBeaconIntegrationTest.m */; };
+		A930920E1BE292E800F451A2 /* NSTimer+Shortcut.m in Sources */ = {isa = PBXBuildFile; fileRef = A930920D1BE292E800F451A2 /* NSTimer+Shortcut.m */; };
+		A93092111BE2A17C00F451A2 /* OTMBeaconLedger.m in Sources */ = {isa = PBXBuildFile; fileRef = A93092101BE2A17C00F451A2 /* OTMBeaconLedger.m */; };
+		A93092121BE2A17C00F451A2 /* OTMBeaconLedger.m in Sources */ = {isa = PBXBuildFile; fileRef = A93092101BE2A17C00F451A2 /* OTMBeaconLedger.m */; };
+		A930921A1BE301CF00F451A2 /* OTMBeaconConfiguration.m in Sources */ = {isa = PBXBuildFile; fileRef = A93092151BE301CF00F451A2 /* OTMBeaconConfiguration.m */; };
+		A930921B1BE301CF00F451A2 /* OTMBeaconConfiguration.m in Sources */ = {isa = PBXBuildFile; fileRef = A93092151BE301CF00F451A2 /* OTMBeaconConfiguration.m */; };
+		A930921C1BE301CF00F451A2 /* OTMBeaconConfigurationSliderCell.m in Sources */ = {isa = PBXBuildFile; fileRef = A93092171BE301CF00F451A2 /* OTMBeaconConfigurationSliderCell.m */; };
+		A930921D1BE301CF00F451A2 /* OTMBeaconConfigurationSliderCell.m in Sources */ = {isa = PBXBuildFile; fileRef = A93092171BE301CF00F451A2 /* OTMBeaconConfigurationSliderCell.m */; };
+		A930921E1BE301CF00F451A2 /* OTMBeaconConfigurationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A93092191BE301CF00F451A2 /* OTMBeaconConfigurationViewController.m */; };
+		A930921F1BE301CF00F451A2 /* OTMBeaconConfigurationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A93092191BE301CF00F451A2 /* OTMBeaconConfigurationViewController.m */; };
+		A93092221BE302D700F451A2 /* OTMBeaconConfigurationReadingCell.m in Sources */ = {isa = PBXBuildFile; fileRef = A93092211BE302D700F451A2 /* OTMBeaconConfigurationReadingCell.m */; };
+		A93092231BE302D700F451A2 /* OTMBeaconConfigurationReadingCell.m in Sources */ = {isa = PBXBuildFile; fileRef = A93092211BE302D700F451A2 /* OTMBeaconConfigurationReadingCell.m */; };
+		A930922A1BE7D00A00F451A2 /* OTMBeaconsListController.m in Sources */ = {isa = PBXBuildFile; fileRef = A93092291BE7D00A00F451A2 /* OTMBeaconsListController.m */; };
+		A930922B1BE7D00A00F451A2 /* OTMBeaconsListController.m in Sources */ = {isa = PBXBuildFile; fileRef = A93092291BE7D00A00F451A2 /* OTMBeaconsListController.m */; };
+		A930922C1BE7E85500F451A2 /* OTMProximityView.m in Sources */ = {isa = PBXBuildFile; fileRef = A9FB58361BD34C9F00ECB550 /* OTMProximityView.m */; };
+		A95945E41BC6E21E00A51B83 /* ISPeerMessage.m in Sources */ = {isa = PBXBuildFile; fileRef = A95945E31BC6E21E00A51B83 /* ISPeerMessage.m */; };
+		A95945E51BC724A600A51B83 /* ISPeerMessage.m in Sources */ = {isa = PBXBuildFile; fileRef = A95945E31BC6E21E00A51B83 /* ISPeerMessage.m */; };
+		A95945E61BC724A600A51B83 /* OTMLocationObservation.m in Sources */ = {isa = PBXBuildFile; fileRef = A99DB0BD1BC1EEBB001D316D /* OTMLocationObservation.m */; };
+		A95945E71BC724A600A51B83 /* ISNotesManager.m in Sources */ = {isa = PBXBuildFile; fileRef = A9CBDA3E1BB63B9100D1AAE9 /* ISNotesManager.m */; };
+		A95945E81BC724B700A51B83 /* ISKeychain.m in Sources */ = {isa = PBXBuildFile; fileRef = A9CBDA461BB70E3000D1AAE9 /* ISKeychain.m */; };
+		A95945E91BC724B700A51B83 /* ISPKey.m in Sources */ = {isa = PBXBuildFile; fileRef = A9CBDA421BB6D01B00D1AAE9 /* ISPKey.m */; };
+		A95945EC1BC724E100A51B83 /* NSBundle+Identifier.m in Sources */ = {isa = PBXBuildFile; fileRef = A9D7A94C1BBC3E81006E8C82 /* NSBundle+Identifier.m */; };
+		A95945ED1BC7250800A51B83 /* NSURLRequest+NotesAPI.m in Sources */ = {isa = PBXBuildFile; fileRef = A98C05411BBDC7F500BD7A04 /* NSURLRequest+NotesAPI.m */; };
+		A95945EE1BC7259200A51B83 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A9CBDA4F1BB8EA3E00D1AAE9 /* Security.framework */; };
+		A95945F01BC7363600A51B83 /* NSData+Digest.m in Sources */ = {isa = PBXBuildFile; fileRef = A9CBDA4A1BB71CBB00D1AAE9 /* NSData+Digest.m */; };
+		A95946011BC7386E00A51B83 /* NSBundle+Identifier.m in Sources */ = {isa = PBXBuildFile; fileRef = A9D7A94C1BBC3E81006E8C82 /* NSBundle+Identifier.m */; };
+		A95946031BC73A2700A51B83 /* NSString+URLEncoding.m in Sources */ = {isa = PBXBuildFile; fileRef = A9978AD11BBD724E00179B7F /* NSString+URLEncoding.m */; };
+		A95946101BC87DDB00A51B83 /* ISLogger.m in Sources */ = {isa = PBXBuildFile; fileRef = A959460F1BC87DDB00A51B83 /* ISLogger.m */; };
+		A95946111BC87DDB00A51B83 /* ISLogger.m in Sources */ = {isa = PBXBuildFile; fileRef = A959460F1BC87DDB00A51B83 /* ISLogger.m */; };
+		A97D4E771BE8FFA9003686A1 /* OTMBeaconAlgorithm.m in Sources */ = {isa = PBXBuildFile; fileRef = A97D4E761BE8FFA9003686A1 /* OTMBeaconAlgorithm.m */; };
+		A97D4E781BE8FFA9003686A1 /* OTMBeaconAlgorithm.m in Sources */ = {isa = PBXBuildFile; fileRef = A97D4E761BE8FFA9003686A1 /* OTMBeaconAlgorithm.m */; };
+		A97D4E7C1BE8FFCF003686A1 /* OTMSimpleBeaconAlgorithm.m in Sources */ = {isa = PBXBuildFile; fileRef = A97D4E7B1BE8FFCF003686A1 /* OTMSimpleBeaconAlgorithm.m */; };
+		A97D4E7D1BE8FFCF003686A1 /* OTMSimpleBeaconAlgorithm.m in Sources */ = {isa = PBXBuildFile; fileRef = A97D4E7B1BE8FFCF003686A1 /* OTMSimpleBeaconAlgorithm.m */; };
+		A97D4E811BE9BC4D003686A1 /* OTMConnectPeerCell.m in Sources */ = {isa = PBXBuildFile; fileRef = A97D4E801BE9BC4D003686A1 /* OTMConnectPeerCell.m */; };
+		A97D4E821BE9BC4D003686A1 /* OTMConnectPeerCell.m in Sources */ = {isa = PBXBuildFile; fileRef = A97D4E801BE9BC4D003686A1 /* OTMConnectPeerCell.m */; };
+		A97D4E851BE9BD6A003686A1 /* OTMConnectViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A97D4E841BE9BD6A003686A1 /* OTMConnectViewController.m */; };
+		A97D4E861BE9BD6A003686A1 /* OTMConnectViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A97D4E841BE9BD6A003686A1 /* OTMConnectViewController.m */; };
+		A97D4EA01BEBF7CA003686A1 /* ThoughtBubble.xib in Resources */ = {isa = PBXBuildFile; fileRef = A97D4E9E1BEBF7CA003686A1 /* ThoughtBubble.xib */; };
+		A97D4EA11BEBF7CA003686A1 /* ThoughtBubble.xib in Resources */ = {isa = PBXBuildFile; fileRef = A97D4E9E1BEBF7CA003686A1 /* ThoughtBubble.xib */; };
+		A97D4EA41BEBFA94003686A1 /* OTMBubbleCalendarView.m in Sources */ = {isa = PBXBuildFile; fileRef = A97D4EA31BEBFA94003686A1 /* OTMBubbleCalendarView.m */; };
+		A97D4EA51BEBFA94003686A1 /* OTMBubbleCalendarView.m in Sources */ = {isa = PBXBuildFile; fileRef = A97D4EA31BEBFA94003686A1 /* OTMBubbleCalendarView.m */; };
+		A97D4EA81BEE8FB3003686A1 /* OTMCheck.m in Sources */ = {isa = PBXBuildFile; fileRef = A97D4EA71BEE8FB3003686A1 /* OTMCheck.m */; };
+		A97D4EA91BEE8FB3003686A1 /* OTMCheck.m in Sources */ = {isa = PBXBuildFile; fileRef = A97D4EA71BEE8FB3003686A1 /* OTMCheck.m */; };
+		A97D4EAC1BEEF130003686A1 /* OTMTitleView.m in Sources */ = {isa = PBXBuildFile; fileRef = A97D4EAB1BEEF130003686A1 /* OTMTitleView.m */; };
+		A97D4EAD1BEEF130003686A1 /* OTMTitleView.m in Sources */ = {isa = PBXBuildFile; fileRef = A97D4EAB1BEEF130003686A1 /* OTMTitleView.m */; };
+		A97D4EB01BEEF173003686A1 /* TitleView.xib in Resources */ = {isa = PBXBuildFile; fileRef = A97D4EAE1BEEF173003686A1 /* TitleView.xib */; };
+		A97D4EB11BEEF173003686A1 /* TitleView.xib in Resources */ = {isa = PBXBuildFile; fileRef = A97D4EAE1BEEF173003686A1 /* TitleView.xib */; };
+		A98C05421BBDC7F500BD7A04 /* NSURLRequest+NotesAPI.m in Sources */ = {isa = PBXBuildFile; fileRef = A98C05411BBDC7F500BD7A04 /* NSURLRequest+NotesAPI.m */; };
+		A9978AD21BBD724E00179B7F /* NSString+URLEncoding.m in Sources */ = {isa = PBXBuildFile; fileRef = A9978AD11BBD724E00179B7F /* NSString+URLEncoding.m */; };
+		A99DB0BE1BC1EEBB001D316D /* OTMLocationObservation.m in Sources */ = {isa = PBXBuildFile; fileRef = A99DB0BD1BC1EEBB001D316D /* OTMLocationObservation.m */; };
+		A9A8BED31BF38667001E48B0 /* OTMRSSICalibrationAlgorithm.m in Sources */ = {isa = PBXBuildFile; fileRef = A9A8BED21BF38667001E48B0 /* OTMRSSICalibrationAlgorithm.m */; };
+		A9A8BED41BF38667001E48B0 /* OTMRSSICalibrationAlgorithm.m in Sources */ = {isa = PBXBuildFile; fileRef = A9A8BED21BF38667001E48B0 /* OTMRSSICalibrationAlgorithm.m */; };
+		A9AF7DF31BD9776400E297CE /* OTMLocationAlgorithm.m in Sources */ = {isa = PBXBuildFile; fileRef = A9AF7DF21BD9776400E297CE /* OTMLocationAlgorithm.m */; };
+		A9AF7DF41BD9776400E297CE /* OTMLocationAlgorithm.m in Sources */ = {isa = PBXBuildFile; fileRef = A9AF7DF21BD9776400E297CE /* OTMLocationAlgorithm.m */; };
+		A9AF7DF81BD9D6D800E297CE /* NSArray+CollectSelect.m in Sources */ = {isa = PBXBuildFile; fileRef = A9AF7DF71BD9D6D800E297CE /* NSArray+CollectSelect.m */; };
+		A9AF7DF91BD9D6D800E297CE /* NSArray+CollectSelect.m in Sources */ = {isa = PBXBuildFile; fileRef = A9AF7DF71BD9D6D800E297CE /* NSArray+CollectSelect.m */; };
+		A9AF7DFC1BDAC53F00E297CE /* pop.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = A9AF7DFB1BDAC53F00E297CE /* pop.mp3 */; };
+		A9AF7DFF1BDB01AE00E297CE /* NSDate+ServerDate.m in Sources */ = {isa = PBXBuildFile; fileRef = A9AF7DFE1BDB01AD00E297CE /* NSDate+ServerDate.m */; };
+		A9AF7E001BDB01AE00E297CE /* NSDate+ServerDate.m in Sources */ = {isa = PBXBuildFile; fileRef = A9AF7DFE1BDB01AD00E297CE /* NSDate+ServerDate.m */; };
+		A9AF7E031BDB059500E297CE /* OTMSourceTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = A9AF7E021BDB059500E297CE /* OTMSourceTableViewCell.m */; };
+		A9AF7E041BDB059500E297CE /* OTMSourceTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = A9AF7E021BDB059500E297CE /* OTMSourceTableViewCell.m */; };
+		A9AF7E071BDDC61700E297CE /* OTMSimpleLocationAlgorithm.m in Sources */ = {isa = PBXBuildFile; fileRef = A9AF7E061BDDC61700E297CE /* OTMSimpleLocationAlgorithm.m */; };
+		A9AF7E081BDDC61700E297CE /* OTMSimpleLocationAlgorithm.m in Sources */ = {isa = PBXBuildFile; fileRef = A9AF7E061BDDC61700E297CE /* OTMSimpleLocationAlgorithm.m */; };
+		A9CBDA171BB1DB2300D1AAE9 /* OTMBeaconServices.plist in Resources */ = {isa = PBXBuildFile; fileRef = A9CBDA161BB1DB2300D1AAE9 /* OTMBeaconServices.plist */; };
+		A9CBDA181BB1DB2300D1AAE9 /* OTMBeaconServices.plist in Resources */ = {isa = PBXBuildFile; fileRef = A9CBDA161BB1DB2300D1AAE9 /* OTMBeaconServices.plist */; };
+		A9CBDA221BB21E6100D1AAE9 /* OTMBeaconPortTypes.plist in Resources */ = {isa = PBXBuildFile; fileRef = A9CBDA211BB21E6100D1AAE9 /* OTMBeaconPortTypes.plist */; };
+		A9CBDA231BB21E6100D1AAE9 /* OTMBeaconPortTypes.plist in Resources */ = {isa = PBXBuildFile; fileRef = A9CBDA211BB21E6100D1AAE9 /* OTMBeaconPortTypes.plist */; };
+		A9CBDA2F1BB2DF9E00D1AAE9 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A9CBDA2E1BB2DF9E00D1AAE9 /* MapKit.framework */; };
+		A9CBDA3F1BB63B9100D1AAE9 /* ISNotesManager.m in Sources */ = {isa = PBXBuildFile; fileRef = A9CBDA3E1BB63B9100D1AAE9 /* ISNotesManager.m */; };
+		A9CBDA431BB6D01B00D1AAE9 /* ISPKey.m in Sources */ = {isa = PBXBuildFile; fileRef = A9CBDA421BB6D01B00D1AAE9 /* ISPKey.m */; };
+		A9CBDA471BB70E3100D1AAE9 /* ISKeychain.m in Sources */ = {isa = PBXBuildFile; fileRef = A9CBDA461BB70E3000D1AAE9 /* ISKeychain.m */; };
+		A9CBDA4B1BB71CBB00D1AAE9 /* NSData+Digest.m in Sources */ = {isa = PBXBuildFile; fileRef = A9CBDA4A1BB71CBB00D1AAE9 /* NSData+Digest.m */; };
+		A9CBDA501BB8EA3E00D1AAE9 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A9CBDA4F1BB8EA3E00D1AAE9 /* Security.framework */; };
+		A9DE424B1BD49C4900CE66FE /* OTMSourcePickerController.m in Sources */ = {isa = PBXBuildFile; fileRef = A9DE424A1BD49C4900CE66FE /* OTMSourcePickerController.m */; };
+		A9DE424C1BD49C4900CE66FE /* OTMSourcePickerController.m in Sources */ = {isa = PBXBuildFile; fileRef = A9DE424A1BD49C4900CE66FE /* OTMSourcePickerController.m */; };
+		A9DE424F1BD49C6D00CE66FE /* OTMDateAndTimeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A9DE424E1BD49C6D00CE66FE /* OTMDateAndTimeViewController.m */; };
+		A9DE42501BD49C6D00CE66FE /* OTMDateAndTimeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A9DE424E1BD49C6D00CE66FE /* OTMDateAndTimeViewController.m */; };
+		A9DE42531BD49D9700CE66FE /* CalendarHeader.xib in Resources */ = {isa = PBXBuildFile; fileRef = A9DE42511BD49D9700CE66FE /* CalendarHeader.xib */; };
+		A9DE42541BD49D9700CE66FE /* CalendarHeader.xib in Resources */ = {isa = PBXBuildFile; fileRef = A9DE42511BD49D9700CE66FE /* CalendarHeader.xib */; };
+		A9DE42631BD5E0A100CE66FE /* OTMMapAnnotation.m in Sources */ = {isa = PBXBuildFile; fileRef = A9DE42621BD5E0A100CE66FE /* OTMMapAnnotation.m */; };
+		A9DE42641BD5E0A100CE66FE /* OTMMapAnnotation.m in Sources */ = {isa = PBXBuildFile; fileRef = A9DE42621BD5E0A100CE66FE /* OTMMapAnnotation.m */; };
+		A9DE42671BD5E41100CE66FE /* NSDate+Helpers.m in Sources */ = {isa = PBXBuildFile; fileRef = A9DE42661BD5E41100CE66FE /* NSDate+Helpers.m */; };
+		A9DE42681BD5E41100CE66FE /* NSDate+Helpers.m in Sources */ = {isa = PBXBuildFile; fileRef = A9DE42661BD5E41100CE66FE /* NSDate+Helpers.m */; };
+		A9DE426B1BD5E6E300CE66FE /* OTMCalendarHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = A9DE426A1BD5E6E300CE66FE /* OTMCalendarHeaderView.m */; };
+		A9DE426C1BD5E6E300CE66FE /* OTMCalendarHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = A9DE426A1BD5E6E300CE66FE /* OTMCalendarHeaderView.m */; };
+		A9DE426F1BD5E7EC00CE66FE /* OTMTimeTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = A9DE426E1BD5E7EC00CE66FE /* OTMTimeTableViewCell.m */; };
+		A9DE42701BD5E7EC00CE66FE /* OTMTimeTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = A9DE426E1BD5E7EC00CE66FE /* OTMTimeTableViewCell.m */; };
+		A9DE42711BD5EA8800CE66FE /* OTMLocationDatabase.m in Sources */ = {isa = PBXBuildFile; fileRef = A9FB582F1BD33F6D00ECB550 /* OTMLocationDatabase.m */; };
+		A9DE42741BD5F01F00CE66FE /* UIView+OTMDateAndTimeFormatter.m in Sources */ = {isa = PBXBuildFile; fileRef = A9DE42731BD5F01F00CE66FE /* UIView+OTMDateAndTimeFormatter.m */; };
+		A9DE42751BD5F01F00CE66FE /* UIView+OTMDateAndTimeFormatter.m in Sources */ = {isa = PBXBuildFile; fileRef = A9DE42731BD5F01F00CE66FE /* UIView+OTMDateAndTimeFormatter.m */; };
+		A9EB2F111BC4509D00971F6B /* OTMLocationManager.m in Sources */ = {isa = PBXBuildFile; fileRef = A9EB2F101BC4509D00971F6B /* OTMLocationManager.m */; };
+		A9F746D01B8E03EE005B5836 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = A9F746CF1B8E03EE005B5836 /* main.m */; };
+		A9F746D31B8E03EE005B5836 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = A9F746D21B8E03EE005B5836 /* AppDelegate.m */; };
+		A9F746DB1B8E03EE005B5836 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A9F746DA1B8E03EE005B5836 /* Images.xcassets */; };
+		A9F746F41B8E0404005B5836 /* ExternalAccessory.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A9F746F31B8E0404005B5836 /* ExternalAccessory.framework */; };
+		A9F746F71B8E1A22005B5836 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A9F746F61B8E1A22005B5836 /* AVFoundation.framework */; };
+		A9F746FA1B8F90F4005B5836 /* ISAudioPortMonitor.m in Sources */ = {isa = PBXBuildFile; fileRef = A9F746F91B8F90F4005B5836 /* ISAudioPortMonitor.m */; };
+		A9F746FE1B8F9AC4005B5836 /* ISBTSourcePickerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A9F746FD1B8F9AC4005B5836 /* ISBTSourcePickerViewController.m */; };
+		A9F747021B8FA0E5005B5836 /* ISDismissSegue.m in Sources */ = {isa = PBXBuildFile; fileRef = A9F747011B8FA0E5005B5836 /* ISDismissSegue.m */; };
+		A9FB580D1BD0336A00ECB550 /* NSString+UUIDColour.m in Sources */ = {isa = PBXBuildFile; fileRef = A9FB580C1BD0336A00ECB550 /* NSString+UUIDColour.m */; };
+		A9FB580E1BD0336A00ECB550 /* NSString+UUIDColour.m in Sources */ = {isa = PBXBuildFile; fileRef = A9FB580C1BD0336A00ECB550 /* NSString+UUIDColour.m */; };
+		A9FB581D1BD334BD00ECB550 /* CalendarPin.xib in Resources */ = {isa = PBXBuildFile; fileRef = A9FB581C1BD334BD00ECB550 /* CalendarPin.xib */; };
+		A9FB58271BD336C500ECB550 /* OTMCalendarPinAnnotationView.m in Sources */ = {isa = PBXBuildFile; fileRef = A9FB58261BD336C500ECB550 /* OTMCalendarPinAnnotationView.m */; };
+		A9FB58301BD33F6D00ECB550 /* OTMLocationDatabase.m in Sources */ = {isa = PBXBuildFile; fileRef = A9FB582F1BD33F6D00ECB550 /* OTMLocationDatabase.m */; };
+		A9FB58321BD3473300ECB550 /* CalendarWithTimePin.xib in Resources */ = {isa = PBXBuildFile; fileRef = A9FB58311BD3473300ECB550 /* CalendarWithTimePin.xib */; };
+		A9FB58341BD3485E00ECB550 /* digital-7.ttf in Resources */ = {isa = PBXBuildFile; fileRef = A9FB58331BD3485E00ECB550 /* digital-7.ttf */; };
+		A9FB58371BD34C9F00ECB550 /* OTMProximityView.m in Sources */ = {isa = PBXBuildFile; fileRef = A9FB58361BD34C9F00ECB550 /* OTMProximityView.m */; };
+		A9FB58431BD35B1500ECB550 /* OTMDataModel.m in Sources */ = {isa = PBXBuildFile; fileRef = A9FB583F1BD35B1500ECB550 /* OTMDataModel.m */; };
+		A9FB58441BD35B1500ECB550 /* OTMDataModel.m in Sources */ = {isa = PBXBuildFile; fileRef = A9FB583F1BD35B1500ECB550 /* OTMDataModel.m */; };
+		A9FB58451BD35B1500ECB550 /* OTMPeerSharingLedger.m in Sources */ = {isa = PBXBuildFile; fileRef = A9FB58421BD35B1500ECB550 /* OTMPeerSharingLedger.m */; };
+		A9FB58461BD35B1500ECB550 /* OTMPeerSharingLedger.m in Sources */ = {isa = PBXBuildFile; fileRef = A9FB58421BD35B1500ECB550 /* OTMPeerSharingLedger.m */; };
+		A9FB58481BD35B3C00ECB550 /* OTMLocationMonitor.m in Sources */ = {isa = PBXBuildFile; fileRef = A9FB58471BD35B3C00ECB550 /* OTMLocationMonitor.m */; };
+		A9FB58491BD35B3C00ECB550 /* OTMLocationMonitor.m in Sources */ = {isa = PBXBuildFile; fileRef = A9FB58471BD35B3C00ECB550 /* OTMLocationMonitor.m */; };
+		A9FB58511BD35B6100ECB550 /* OTMLocationManagerTest.m in Sources */ = {isa = PBXBuildFile; fileRef = A9FB584B1BD35B6100ECB550 /* OTMLocationManagerTest.m */; };
+		A9FB58531BD35B6100ECB550 /* OTMLocationObservationTest.m in Sources */ = {isa = PBXBuildFile; fileRef = A9FB584C1BD35B6100ECB550 /* OTMLocationObservationTest.m */; };
+		A9FB58551BD35B6100ECB550 /* OTMPeerSharingLedgerTest.m in Sources */ = {isa = PBXBuildFile; fileRef = A9FB584D1BD35B6100ECB550 /* OTMPeerSharingLedgerTest.m */; };
+		A9FB58561BD35BAF00ECB550 /* OTMDataModelTest.m in Sources */ = {isa = PBXBuildFile; fileRef = A9FB584A1BD35B6100ECB550 /* OTMDataModelTest.m */; };
+		A9FB585C1BD35E1500ECB550 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = A9FB585A1BD35E1500ECB550 /* LaunchScreen.xib */; };
+		A9FB585D1BD35E1500ECB550 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = A9FB585A1BD35E1500ECB550 /* LaunchScreen.xib */; };
+		A9FB58601BD35E2100ECB550 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A9FB585E1BD35E2100ECB550 /* Main.storyboard */; };
+		A9FB58611BD35E2100ECB550 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A9FB585E1BD35E2100ECB550 /* Main.storyboard */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		A95945FA1BC737CD00A51B83 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A9F746C21B8E03EE005B5836 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A9F746C91B8E03EE005B5836;
+			remoteInfo = BTConnTest;
+		};
+		A959460C1BC819D100A51B83 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A9F746C21B8E03EE005B5836 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A9F746C91B8E03EE005B5836;
+			remoteInfo = BTConnTest;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		A9FB582D1BD339BF00ECB550 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		2AB2AE0C26F5F9C9410E3C43 /* Pods_CarBeacon.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CarBeacon.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		71288D6AD9B57C6B696694B2 /* Pods-CarBeaconTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CarBeaconTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-CarBeaconTests/Pods-CarBeaconTests.debug.xcconfig"; sourceTree = "<group>"; };
+		786CED4F1BD3E7B8003786BB /* OTMObservationsManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = OTMObservationsManager.h; path = src/OTM/OTMObservationsManager.h; sourceTree = SOURCE_ROOT; };
+		786CED501BD3E7B8003786BB /* OTMObservationsManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = OTMObservationsManager.m; path = src/OTM/OTMObservationsManager.m; sourceTree = SOURCE_ROOT; };
+		786CED6A1BD3F0D7003786BB /* ISDisclosureButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ISDisclosureButton.h; sourceTree = "<group>"; };
+		786CED6B1BD3F0D7003786BB /* ISDisclosureButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ISDisclosureButton.m; sourceTree = "<group>"; };
+		786CED711BD40514003786BB /* ISKeychainTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ISKeychainTest.m; sourceTree = "<group>"; };
+		786CED721BD40514003786BB /* ISNotesManagerTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ISNotesManagerTest.m; sourceTree = "<group>"; };
+		786CED731BD40514003786BB /* NSBundleIdentifierTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NSBundleIdentifierTest.m; sourceTree = "<group>"; };
+		786CED741BD40514003786BB /* NSStringURLEncodingTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NSStringURLEncodingTest.m; sourceTree = "<group>"; };
+		78E9E6A41B961A1E00154009 /* ISAnimator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ISAnimator.h; sourceTree = "<group>"; };
+		78E9E6A51B961A1E00154009 /* ISAnimator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ISAnimator.m; sourceTree = "<group>"; };
+		78E9E6A81B961F4E00154009 /* ISRevealAndMoveAnimator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ISRevealAndMoveAnimator.h; sourceTree = "<group>"; };
+		78E9E6A91B961F4E00154009 /* ISRevealAndMoveAnimator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ISRevealAndMoveAnimator.m; sourceTree = "<group>"; };
+		78E9E6AC1B9621FA00154009 /* ISInfoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ISInfoViewController.h; sourceTree = "<group>"; };
+		78E9E6AD1B9621FA00154009 /* ISInfoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ISInfoViewController.m; sourceTree = "<group>"; };
+		78E9E6B01B962F8100154009 /* ISBackgroundColourAnimator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ISBackgroundColourAnimator.h; sourceTree = "<group>"; };
+		78E9E6B11B962F8100154009 /* ISBackgroundColourAnimator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ISBackgroundColourAnimator.m; sourceTree = "<group>"; };
+		8FD3A0825CC22F278B9E3343 /* Pods-CarBeacon.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CarBeacon.release.xcconfig"; path = "Pods/Target Support Files/Pods-CarBeacon/Pods-CarBeacon.release.xcconfig"; sourceTree = "<group>"; };
+		9781EEA2F3A432AF5F526E23 /* Pods_CarBeaconUnitTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CarBeaconUnitTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		9CB67B12594F6D5F917A80C6 /* Pods_CarBeaconTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CarBeaconTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A93091E11BE1529900F451A2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/CarPin.xib; sourceTree = "<group>"; };
+		A93091E41BE152EC00F451A2 /* OTMCarPinAnnotationView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OTMCarPinAnnotationView.h; sourceTree = "<group>"; };
+		A93091E51BE152EC00F451A2 /* OTMCarPinAnnotationView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OTMCarPinAnnotationView.m; sourceTree = "<group>"; };
+		A93091E81BE15BB700F451A2 /* OTMBeaconsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OTMBeaconsViewController.h; sourceTree = "<group>"; };
+		A93091E91BE15BB700F451A2 /* OTMBeaconsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OTMBeaconsViewController.m; sourceTree = "<group>"; };
+		A93091EC1BE15C0C00F451A2 /* UIImage+Tint.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+Tint.h"; sourceTree = "<group>"; };
+		A93091ED1BE15C0C00F451A2 /* UIImage+Tint.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+Tint.m"; sourceTree = "<group>"; };
+		A93091F01BE1B92500F451A2 /* LicensePlate.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = LicensePlate.ttf; sourceTree = "<group>"; };
+		A93091F31BE26E1000F451A2 /* OTMBeaconsViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OTMBeaconsViewCell.h; sourceTree = "<group>"; };
+		A93091F41BE26E1000F451A2 /* OTMBeaconsViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OTMBeaconsViewCell.m; sourceTree = "<group>"; };
+		A93091FC1BE28E3600F451A2 /* OTMBeaconConfigurationService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OTMBeaconConfigurationService.h; sourceTree = "<group>"; };
+		A93091FD1BE28E3600F451A2 /* OTMBeaconConfigurationService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OTMBeaconConfigurationService.m; sourceTree = "<group>"; };
+		A93091FE1BE28E3600F451A2 /* OTMBeaconIdentificationPort.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OTMBeaconIdentificationPort.h; sourceTree = "<group>"; };
+		A93091FF1BE28E3600F451A2 /* OTMBeaconIdentificationPort.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OTMBeaconIdentificationPort.m; sourceTree = "<group>"; };
+		A93092001BE28E3600F451A2 /* OTMBeaconConfigurationPort.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OTMBeaconConfigurationPort.h; sourceTree = "<group>"; };
+		A93092011BE28E3600F451A2 /* OTMBeaconConfigurationPort.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OTMBeaconConfigurationPort.m; sourceTree = "<group>"; };
+		A93092081BE28E4E00F451A2 /* OTMBeaconIntegrationTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OTMBeaconIntegrationTest.m; sourceTree = "<group>"; };
+		A930920C1BE292E800F451A2 /* NSTimer+Shortcut.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSTimer+Shortcut.h"; sourceTree = "<group>"; };
+		A930920D1BE292E800F451A2 /* NSTimer+Shortcut.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSTimer+Shortcut.m"; sourceTree = "<group>"; };
+		A930920F1BE2A17C00F451A2 /* OTMBeaconLedger.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OTMBeaconLedger.h; sourceTree = "<group>"; };
+		A93092101BE2A17C00F451A2 /* OTMBeaconLedger.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OTMBeaconLedger.m; sourceTree = "<group>"; };
+		A93092141BE301CF00F451A2 /* OTMBeaconConfiguration.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OTMBeaconConfiguration.h; sourceTree = "<group>"; };
+		A93092151BE301CF00F451A2 /* OTMBeaconConfiguration.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OTMBeaconConfiguration.m; sourceTree = "<group>"; };
+		A93092161BE301CF00F451A2 /* OTMBeaconConfigurationSliderCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OTMBeaconConfigurationSliderCell.h; sourceTree = "<group>"; };
+		A93092171BE301CF00F451A2 /* OTMBeaconConfigurationSliderCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OTMBeaconConfigurationSliderCell.m; sourceTree = "<group>"; };
+		A93092181BE301CF00F451A2 /* OTMBeaconConfigurationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OTMBeaconConfigurationViewController.h; sourceTree = "<group>"; };
+		A93092191BE301CF00F451A2 /* OTMBeaconConfigurationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OTMBeaconConfigurationViewController.m; sourceTree = "<group>"; };
+		A93092201BE302D700F451A2 /* OTMBeaconConfigurationReadingCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OTMBeaconConfigurationReadingCell.h; sourceTree = "<group>"; };
+		A93092211BE302D700F451A2 /* OTMBeaconConfigurationReadingCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OTMBeaconConfigurationReadingCell.m; sourceTree = "<group>"; };
+		A93092281BE7D00A00F451A2 /* OTMBeaconsListController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OTMBeaconsListController.h; sourceTree = "<group>"; };
+		A93092291BE7D00A00F451A2 /* OTMBeaconsListController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OTMBeaconsListController.m; sourceTree = "<group>"; };
+		A95945E21BC6E21E00A51B83 /* ISPeerMessage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ISPeerMessage.h; sourceTree = "<group>"; };
+		A95945E31BC6E21E00A51B83 /* ISPeerMessage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ISPeerMessage.m; sourceTree = "<group>"; };
+		A95945F51BC737CD00A51B83 /* CarBeacon.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CarBeacon.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		A95945F91BC737CD00A51B83 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A959460B1BC804C200A51B83 /* ISLog.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ISLog.h; sourceTree = "<group>"; };
+		A959460E1BC87DDB00A51B83 /* ISLogger.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ISLogger.h; sourceTree = "<group>"; };
+		A959460F1BC87DDB00A51B83 /* ISLogger.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ISLogger.m; sourceTree = "<group>"; };
+		A97D4E751BE8FFA9003686A1 /* OTMBeaconAlgorithm.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OTMBeaconAlgorithm.h; sourceTree = "<group>"; };
+		A97D4E761BE8FFA9003686A1 /* OTMBeaconAlgorithm.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OTMBeaconAlgorithm.m; sourceTree = "<group>"; };
+		A97D4E7A1BE8FFCF003686A1 /* OTMSimpleBeaconAlgorithm.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OTMSimpleBeaconAlgorithm.h; sourceTree = "<group>"; };
+		A97D4E7B1BE8FFCF003686A1 /* OTMSimpleBeaconAlgorithm.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OTMSimpleBeaconAlgorithm.m; sourceTree = "<group>"; };
+		A97D4E7F1BE9BC4D003686A1 /* OTMConnectPeerCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OTMConnectPeerCell.h; sourceTree = "<group>"; };
+		A97D4E801BE9BC4D003686A1 /* OTMConnectPeerCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OTMConnectPeerCell.m; sourceTree = "<group>"; };
+		A97D4E831BE9BD6A003686A1 /* OTMConnectViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OTMConnectViewController.h; sourceTree = "<group>"; };
+		A97D4E841BE9BD6A003686A1 /* OTMConnectViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OTMConnectViewController.m; sourceTree = "<group>"; };
+		A97D4E9F1BEBF7CA003686A1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/ThoughtBubble.xib; sourceTree = "<group>"; };
+		A97D4EA21BEBFA94003686A1 /* OTMBubbleCalendarView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OTMBubbleCalendarView.h; sourceTree = "<group>"; };
+		A97D4EA31BEBFA94003686A1 /* OTMBubbleCalendarView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OTMBubbleCalendarView.m; sourceTree = "<group>"; };
+		A97D4EA61BEE8FB3003686A1 /* OTMCheck.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OTMCheck.h; sourceTree = "<group>"; };
+		A97D4EA71BEE8FB3003686A1 /* OTMCheck.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OTMCheck.m; sourceTree = "<group>"; };
+		A97D4EAA1BEEF130003686A1 /* OTMTitleView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OTMTitleView.h; sourceTree = "<group>"; };
+		A97D4EAB1BEEF130003686A1 /* OTMTitleView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OTMTitleView.m; sourceTree = "<group>"; };
+		A97D4EAF1BEEF173003686A1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/TitleView.xib; sourceTree = "<group>"; };
+		A98C05401BBDC7F500BD7A04 /* NSURLRequest+NotesAPI.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSURLRequest+NotesAPI.h"; sourceTree = "<group>"; };
+		A98C05411BBDC7F500BD7A04 /* NSURLRequest+NotesAPI.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSURLRequest+NotesAPI.m"; sourceTree = "<group>"; };
+		A9978AD01BBD724E00179B7F /* NSString+URLEncoding.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+URLEncoding.h"; sourceTree = "<group>"; };
+		A9978AD11BBD724E00179B7F /* NSString+URLEncoding.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+URLEncoding.m"; sourceTree = "<group>"; };
+		A99DB0BB1BC16426001D316D /* OTMConstants.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = OTMConstants.h; path = src/OTM/OTMConstants.h; sourceTree = SOURCE_ROOT; };
+		A99DB0BC1BC1EEBB001D316D /* OTMLocationObservation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = OTMLocationObservation.h; path = src/OTM/OTMLocationObservation.h; sourceTree = SOURCE_ROOT; };
+		A99DB0BD1BC1EEBB001D316D /* OTMLocationObservation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = OTMLocationObservation.m; path = src/OTM/OTMLocationObservation.m; sourceTree = SOURCE_ROOT; };
+		A9A8BED11BF38667001E48B0 /* OTMRSSICalibrationAlgorithm.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OTMRSSICalibrationAlgorithm.h; sourceTree = "<group>"; };
+		A9A8BED21BF38667001E48B0 /* OTMRSSICalibrationAlgorithm.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OTMRSSICalibrationAlgorithm.m; sourceTree = "<group>"; };
+		A9AF7DF11BD9776400E297CE /* OTMLocationAlgorithm.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OTMLocationAlgorithm.h; sourceTree = "<group>"; };
+		A9AF7DF21BD9776400E297CE /* OTMLocationAlgorithm.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OTMLocationAlgorithm.m; sourceTree = "<group>"; };
+		A9AF7DF61BD9D6D800E297CE /* NSArray+CollectSelect.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSArray+CollectSelect.h"; sourceTree = "<group>"; };
+		A9AF7DF71BD9D6D800E297CE /* NSArray+CollectSelect.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSArray+CollectSelect.m"; sourceTree = "<group>"; };
+		A9AF7DFB1BDAC53F00E297CE /* pop.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = pop.mp3; sourceTree = "<group>"; };
+		A9AF7DFD1BDB01AD00E297CE /* NSDate+ServerDate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDate+ServerDate.h"; sourceTree = "<group>"; };
+		A9AF7DFE1BDB01AD00E297CE /* NSDate+ServerDate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDate+ServerDate.m"; sourceTree = "<group>"; };
+		A9AF7E011BDB059500E297CE /* OTMSourceTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OTMSourceTableViewCell.h; sourceTree = "<group>"; };
+		A9AF7E021BDB059500E297CE /* OTMSourceTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OTMSourceTableViewCell.m; sourceTree = "<group>"; };
+		A9AF7E051BDDC61700E297CE /* OTMSimpleLocationAlgorithm.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OTMSimpleLocationAlgorithm.h; sourceTree = "<group>"; };
+		A9AF7E061BDDC61700E297CE /* OTMSimpleLocationAlgorithm.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OTMSimpleLocationAlgorithm.m; sourceTree = "<group>"; };
+		A9CBDA161BB1DB2300D1AAE9 /* OTMBeaconServices.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = OTMBeaconServices.plist; sourceTree = "<group>"; };
+		A9CBDA211BB21E6100D1AAE9 /* OTMBeaconPortTypes.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = OTMBeaconPortTypes.plist; sourceTree = "<group>"; };
+		A9CBDA2E1BB2DF9E00D1AAE9 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		A9CBDA3D1BB63B9100D1AAE9 /* ISNotesManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ISNotesManager.h; sourceTree = "<group>"; };
+		A9CBDA3E1BB63B9100D1AAE9 /* ISNotesManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ISNotesManager.m; sourceTree = "<group>"; };
+		A9CBDA411BB6D01B00D1AAE9 /* ISPKey.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ISPKey.h; sourceTree = "<group>"; };
+		A9CBDA421BB6D01B00D1AAE9 /* ISPKey.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ISPKey.m; sourceTree = "<group>"; };
+		A9CBDA451BB70E3000D1AAE9 /* ISKeychain.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ISKeychain.h; sourceTree = "<group>"; };
+		A9CBDA461BB70E3000D1AAE9 /* ISKeychain.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ISKeychain.m; sourceTree = "<group>"; };
+		A9CBDA491BB71CBB00D1AAE9 /* NSData+Digest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSData+Digest.h"; sourceTree = "<group>"; };
+		A9CBDA4A1BB71CBB00D1AAE9 /* NSData+Digest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSData+Digest.m"; sourceTree = "<group>"; };
+		A9CBDA4F1BB8EA3E00D1AAE9 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
+		A9D7A94B1BBC3E81006E8C82 /* NSBundle+Identifier.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSBundle+Identifier.h"; sourceTree = "<group>"; };
+		A9D7A94C1BBC3E81006E8C82 /* NSBundle+Identifier.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSBundle+Identifier.m"; sourceTree = "<group>"; };
+		A9DE42491BD49C4800CE66FE /* OTMSourcePickerController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OTMSourcePickerController.h; sourceTree = "<group>"; };
+		A9DE424A1BD49C4900CE66FE /* OTMSourcePickerController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OTMSourcePickerController.m; sourceTree = "<group>"; };
+		A9DE424D1BD49C6D00CE66FE /* OTMDateAndTimeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OTMDateAndTimeViewController.h; sourceTree = "<group>"; };
+		A9DE424E1BD49C6D00CE66FE /* OTMDateAndTimeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OTMDateAndTimeViewController.m; sourceTree = "<group>"; };
+		A9DE42521BD49D9700CE66FE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/CalendarHeader.xib; sourceTree = "<group>"; };
+		A9DE42611BD5E0A100CE66FE /* OTMMapAnnotation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OTMMapAnnotation.h; sourceTree = "<group>"; };
+		A9DE42621BD5E0A100CE66FE /* OTMMapAnnotation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OTMMapAnnotation.m; sourceTree = "<group>"; };
+		A9DE42651BD5E41100CE66FE /* NSDate+Helpers.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDate+Helpers.h"; sourceTree = "<group>"; };
+		A9DE42661BD5E41100CE66FE /* NSDate+Helpers.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDate+Helpers.m"; sourceTree = "<group>"; };
+		A9DE42691BD5E6E300CE66FE /* OTMCalendarHeaderView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OTMCalendarHeaderView.h; sourceTree = "<group>"; };
+		A9DE426A1BD5E6E300CE66FE /* OTMCalendarHeaderView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OTMCalendarHeaderView.m; sourceTree = "<group>"; };
+		A9DE426D1BD5E7EC00CE66FE /* OTMTimeTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OTMTimeTableViewCell.h; sourceTree = "<group>"; };
+		A9DE426E1BD5E7EC00CE66FE /* OTMTimeTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OTMTimeTableViewCell.m; sourceTree = "<group>"; };
+		A9DE42721BD5F01F00CE66FE /* UIView+OTMDateAndTimeFormatter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+OTMDateAndTimeFormatter.h"; sourceTree = "<group>"; };
+		A9DE42731BD5F01F00CE66FE /* UIView+OTMDateAndTimeFormatter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+OTMDateAndTimeFormatter.m"; sourceTree = "<group>"; };
+		A9EB2F0F1BC4509D00971F6B /* OTMLocationManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = OTMLocationManager.h; path = src/OTM/OTMLocationManager.h; sourceTree = SOURCE_ROOT; };
+		A9EB2F101BC4509D00971F6B /* OTMLocationManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = OTMLocationManager.m; path = src/OTM/OTMLocationManager.m; sourceTree = SOURCE_ROOT; };
+		A9F746CA1B8E03EE005B5836 /* CarBeacon.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CarBeacon.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		A9F746CE1B8E03EE005B5836 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A9F746CF1B8E03EE005B5836 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		A9F746D11B8E03EE005B5836 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		A9F746D21B8E03EE005B5836 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		A9F746D41B8E03EE005B5836 /* OTMMapViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OTMMapViewController.h; sourceTree = "<group>"; };
+		A9F746D51B8E03EE005B5836 /* OTMMapViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = OTMMapViewController.m; sourceTree = "<group>"; };
+		A9F746DA1B8E03EE005B5836 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		A9F746E31B8E03EE005B5836 /* CarBeacon.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CarBeacon.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		A9F746F31B8E0404005B5836 /* ExternalAccessory.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ExternalAccessory.framework; path = System/Library/Frameworks/ExternalAccessory.framework; sourceTree = SDKROOT; };
+		A9F746F51B8E1397005B5836 /* CarBeacon.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = CarBeacon.entitlements; sourceTree = "<group>"; };
+		A9F746F61B8E1A22005B5836 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		A9F746F81B8F90F4005B5836 /* ISAudioPortMonitor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ISAudioPortMonitor.h; sourceTree = "<group>"; };
+		A9F746F91B8F90F4005B5836 /* ISAudioPortMonitor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ISAudioPortMonitor.m; sourceTree = "<group>"; };
+		A9F746FC1B8F9AC4005B5836 /* ISBTSourcePickerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ISBTSourcePickerViewController.h; sourceTree = "<group>"; };
+		A9F746FD1B8F9AC4005B5836 /* ISBTSourcePickerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ISBTSourcePickerViewController.m; sourceTree = "<group>"; };
+		A9F747001B8FA0E5005B5836 /* ISDismissSegue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ISDismissSegue.h; sourceTree = "<group>"; };
+		A9F747011B8FA0E5005B5836 /* ISDismissSegue.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ISDismissSegue.m; sourceTree = "<group>"; };
+		A9F7470D1B931C54005B5836 /* ISBlurredLabel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ISBlurredLabel.h; sourceTree = "<group>"; };
+		A9F7470E1B931C54005B5836 /* ISBlurredLabel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ISBlurredLabel.m; sourceTree = "<group>"; };
+		A9F75CBDE526BDBFC53AEA9A /* Pods-CarBeaconUnitTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CarBeaconUnitTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-CarBeaconUnitTests/Pods-CarBeaconUnitTests.debug.xcconfig"; sourceTree = "<group>"; };
+		A9FB580B1BD0336A00ECB550 /* NSString+UUIDColour.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+UUIDColour.h"; sourceTree = "<group>"; };
+		A9FB580C1BD0336A00ECB550 /* NSString+UUIDColour.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+UUIDColour.m"; sourceTree = "<group>"; };
+		A9FB581C1BD334BD00ECB550 /* CalendarPin.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = CalendarPin.xib; path = Base.lproj/CalendarPin.xib; sourceTree = "<group>"; };
+		A9FB58251BD336C500ECB550 /* OTMCalendarPinAnnotationView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = OTMCalendarPinAnnotationView.h; path = src/OTM/OTMCalendarPinAnnotationView.h; sourceTree = SOURCE_ROOT; };
+		A9FB58261BD336C500ECB550 /* OTMCalendarPinAnnotationView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = OTMCalendarPinAnnotationView.m; path = src/OTM/OTMCalendarPinAnnotationView.m; sourceTree = SOURCE_ROOT; };
+		A9FB582E1BD33F6D00ECB550 /* OTMLocationDatabase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = OTMLocationDatabase.h; path = src/OTM/OTMLocationDatabase.h; sourceTree = SOURCE_ROOT; };
+		A9FB582F1BD33F6D00ECB550 /* OTMLocationDatabase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = OTMLocationDatabase.m; path = src/OTM/OTMLocationDatabase.m; sourceTree = SOURCE_ROOT; };
+		A9FB58311BD3473300ECB550 /* CalendarWithTimePin.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = CalendarWithTimePin.xib; path = Base.lproj/CalendarWithTimePin.xib; sourceTree = "<group>"; };
+		A9FB58331BD3485E00ECB550 /* digital-7.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "digital-7.ttf"; sourceTree = "<group>"; };
+		A9FB58351BD34C9F00ECB550 /* OTMProximityView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = OTMProximityView.h; path = src/OTM/OTMProximityView.h; sourceTree = SOURCE_ROOT; };
+		A9FB58361BD34C9F00ECB550 /* OTMProximityView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = OTMProximityView.m; path = src/OTM/OTMProximityView.m; sourceTree = SOURCE_ROOT; };
+		A9FB583E1BD35B1500ECB550 /* OTMDataModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = OTMDataModel.h; path = src/OTM/OTMDataModel.h; sourceTree = SOURCE_ROOT; };
+		A9FB583F1BD35B1500ECB550 /* OTMDataModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = OTMDataModel.m; path = src/OTM/OTMDataModel.m; sourceTree = SOURCE_ROOT; };
+		A9FB58401BD35B1500ECB550 /* OTMLocationMonitor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = OTMLocationMonitor.h; path = src/OTM/OTMLocationMonitor.h; sourceTree = SOURCE_ROOT; };
+		A9FB58411BD35B1500ECB550 /* OTMPeerSharingLedger.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = OTMPeerSharingLedger.h; path = src/OTM/OTMPeerSharingLedger.h; sourceTree = SOURCE_ROOT; };
+		A9FB58421BD35B1500ECB550 /* OTMPeerSharingLedger.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = OTMPeerSharingLedger.m; path = src/OTM/OTMPeerSharingLedger.m; sourceTree = SOURCE_ROOT; };
+		A9FB58471BD35B3C00ECB550 /* OTMLocationMonitor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = OTMLocationMonitor.m; path = src/OTM/OTMLocationMonitor.m; sourceTree = SOURCE_ROOT; };
+		A9FB584A1BD35B6100ECB550 /* OTMDataModelTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = OTMDataModelTest.m; path = src/OTM/tests/OTMDataModelTest.m; sourceTree = SOURCE_ROOT; };
+		A9FB584B1BD35B6100ECB550 /* OTMLocationManagerTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = OTMLocationManagerTest.m; path = src/OTM/tests/OTMLocationManagerTest.m; sourceTree = SOURCE_ROOT; };
+		A9FB584C1BD35B6100ECB550 /* OTMLocationObservationTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = OTMLocationObservationTest.m; path = src/OTM/tests/OTMLocationObservationTest.m; sourceTree = SOURCE_ROOT; };
+		A9FB584D1BD35B6100ECB550 /* OTMPeerSharingLedgerTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = OTMPeerSharingLedgerTest.m; path = src/OTM/tests/OTMPeerSharingLedgerTest.m; sourceTree = SOURCE_ROOT; };
+		A9FB585B1BD35E1500ECB550 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		A9FB585F1BD35E2100ECB550 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		CA21608571178D2542DFE962 /* Pods-CarBeacon.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CarBeacon.debug.xcconfig"; path = "Pods/Target Support Files/Pods-CarBeacon/Pods-CarBeacon.debug.xcconfig"; sourceTree = "<group>"; };
+		EBF1E7686C25E3B8212D512B /* Pods-CarBeaconTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CarBeaconTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-CarBeaconTests/Pods-CarBeaconTests.release.xcconfig"; sourceTree = "<group>"; };
+		F51E457BE8960E9EA85F3994 /* Pods-CarBeaconUnitTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CarBeaconUnitTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-CarBeaconUnitTests/Pods-CarBeaconUnitTests.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		A95945F21BC737CD00A51B83 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				812A555B20B07712508C568A /* Pods_CarBeaconTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A9F746C71B8E03EE005B5836 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A9CBDA501BB8EA3E00D1AAE9 /* Security.framework in Frameworks */,
+				A9CBDA2F1BB2DF9E00D1AAE9 /* MapKit.framework in Frameworks */,
+				A9F746F71B8E1A22005B5836 /* AVFoundation.framework in Frameworks */,
+				A9F746F41B8E0404005B5836 /* ExternalAccessory.framework in Frameworks */,
+				273F2BA29ABF18145941304E /* Pods_CarBeacon.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A9F746E01B8E03EE005B5836 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A95945EE1BC7259200A51B83 /* Security.framework in Frameworks */,
+				5BE73F7728D8A53620EA822F /* Pods_CarBeaconUnitTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		17EC7355FC87085E9A1FA3AA /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				CA21608571178D2542DFE962 /* Pods-CarBeacon.debug.xcconfig */,
+				8FD3A0825CC22F278B9E3343 /* Pods-CarBeacon.release.xcconfig */,
+				71288D6AD9B57C6B696694B2 /* Pods-CarBeaconTests.debug.xcconfig */,
+				EBF1E7686C25E3B8212D512B /* Pods-CarBeaconTests.release.xcconfig */,
+				A9F75CBDE526BDBFC53AEA9A /* Pods-CarBeaconUnitTests.debug.xcconfig */,
+				F51E457BE8960E9EA85F3994 /* Pods-CarBeaconUnitTests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		7878D8941BD40784009F5C29 /* src */ = {
+			isa = PBXGroup;
+			children = (
+				A9F746D11B8E03EE005B5836 /* AppDelegate.h */,
+				A9F746D21B8E03EE005B5836 /* AppDelegate.m */,
+				A9F746CF1B8E03EE005B5836 /* main.m */,
+				A9FB58391BD355EF00ECB550 /* igorsales */,
+				A9FB58381BD355E300ECB550 /* OTM */,
+			);
+			path = src;
+			sourceTree = "<group>";
+		};
+		A95945F61BC737CD00A51B83 /* tests */ = {
+			isa = PBXGroup;
+			children = (
+				A95945F91BC737CD00A51B83 /* Info.plist */,
+			);
+			path = tests;
+			sourceTree = "<group>";
+		};
+		A9F746C11B8E03EE005B5836 = {
+			isa = PBXGroup;
+			children = (
+				7878D8941BD40784009F5C29 /* src */,
+				A9FB58591BD35CFE00ECB550 /* Frameworks */,
+				A9FB58581BD35CEF00ECB550 /* Resoources */,
+				A9F746CD1B8E03EE005B5836 /* Supporting Files */,
+				A95945F61BC737CD00A51B83 /* tests */,
+				A9F746CB1B8E03EE005B5836 /* Products */,
+				17EC7355FC87085E9A1FA3AA /* Pods */,
+			);
+			sourceTree = "<group>";
+		};
+		A9F746CB1B8E03EE005B5836 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				A9F746CA1B8E03EE005B5836 /* CarBeacon.app */,
+				A9F746E31B8E03EE005B5836 /* CarBeacon.xctest */,
+				A95945F51BC737CD00A51B83 /* CarBeacon.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		A9F746CD1B8E03EE005B5836 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				A9F746F51B8E1397005B5836 /* CarBeacon.entitlements */,
+				A9F746CE1B8E03EE005B5836 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		A9FB58381BD355E300ECB550 /* OTM */ = {
+			isa = PBXGroup;
+			children = (
+				A97D4E831BE9BD6A003686A1 /* OTMConnectViewController.h */,
+				A97D4E841BE9BD6A003686A1 /* OTMConnectViewController.m */,
+				A9AF7DFD1BDB01AD00E297CE /* NSDate+ServerDate.h */,
+				A9AF7DFE1BDB01AD00E297CE /* NSDate+ServerDate.m */,
+				A97D4E751BE8FFA9003686A1 /* OTMBeaconAlgorithm.h */,
+				A97D4E761BE8FFA9003686A1 /* OTMBeaconAlgorithm.m */,
+				A93092141BE301CF00F451A2 /* OTMBeaconConfiguration.h */,
+				A93092151BE301CF00F451A2 /* OTMBeaconConfiguration.m */,
+				A93092001BE28E3600F451A2 /* OTMBeaconConfigurationPort.h */,
+				A93092011BE28E3600F451A2 /* OTMBeaconConfigurationPort.m */,
+				A93092201BE302D700F451A2 /* OTMBeaconConfigurationReadingCell.h */,
+				A93092211BE302D700F451A2 /* OTMBeaconConfigurationReadingCell.m */,
+				A93091FC1BE28E3600F451A2 /* OTMBeaconConfigurationService.h */,
+				A93091FD1BE28E3600F451A2 /* OTMBeaconConfigurationService.m */,
+				A93092161BE301CF00F451A2 /* OTMBeaconConfigurationSliderCell.h */,
+				A93092171BE301CF00F451A2 /* OTMBeaconConfigurationSliderCell.m */,
+				A93092181BE301CF00F451A2 /* OTMBeaconConfigurationViewController.h */,
+				A93092191BE301CF00F451A2 /* OTMBeaconConfigurationViewController.m */,
+				A93091FE1BE28E3600F451A2 /* OTMBeaconIdentificationPort.h */,
+				A93091FF1BE28E3600F451A2 /* OTMBeaconIdentificationPort.m */,
+				A930920F1BE2A17C00F451A2 /* OTMBeaconLedger.h */,
+				A93092101BE2A17C00F451A2 /* OTMBeaconLedger.m */,
+				A93091F31BE26E1000F451A2 /* OTMBeaconsViewCell.h */,
+				A93091F41BE26E1000F451A2 /* OTMBeaconsViewCell.m */,
+				A93092281BE7D00A00F451A2 /* OTMBeaconsListController.h */,
+				A93092291BE7D00A00F451A2 /* OTMBeaconsListController.m */,
+				A93091E81BE15BB700F451A2 /* OTMBeaconsViewController.h */,
+				A93091E91BE15BB700F451A2 /* OTMBeaconsViewController.m */,
+				A9DE42691BD5E6E300CE66FE /* OTMCalendarHeaderView.h */,
+				A9DE426A1BD5E6E300CE66FE /* OTMCalendarHeaderView.m */,
+				A9FB58251BD336C500ECB550 /* OTMCalendarPinAnnotationView.h */,
+				A9FB58261BD336C500ECB550 /* OTMCalendarPinAnnotationView.m */,
+				A93091E41BE152EC00F451A2 /* OTMCarPinAnnotationView.h */,
+				A93091E51BE152EC00F451A2 /* OTMCarPinAnnotationView.m */,
+				A99DB0BB1BC16426001D316D /* OTMConstants.h */,
+				A9FB583E1BD35B1500ECB550 /* OTMDataModel.h */,
+				A9FB583F1BD35B1500ECB550 /* OTMDataModel.m */,
+				A9DE424D1BD49C6D00CE66FE /* OTMDateAndTimeViewController.h */,
+				A9DE424E1BD49C6D00CE66FE /* OTMDateAndTimeViewController.m */,
+				A9AF7DF11BD9776400E297CE /* OTMLocationAlgorithm.h */,
+				A9AF7DF21BD9776400E297CE /* OTMLocationAlgorithm.m */,
+				A9FB582E1BD33F6D00ECB550 /* OTMLocationDatabase.h */,
+				A9FB582F1BD33F6D00ECB550 /* OTMLocationDatabase.m */,
+				A9EB2F0F1BC4509D00971F6B /* OTMLocationManager.h */,
+				A9EB2F101BC4509D00971F6B /* OTMLocationManager.m */,
+				A9FB58401BD35B1500ECB550 /* OTMLocationMonitor.h */,
+				A9FB58471BD35B3C00ECB550 /* OTMLocationMonitor.m */,
+				A99DB0BC1BC1EEBB001D316D /* OTMLocationObservation.h */,
+				A99DB0BD1BC1EEBB001D316D /* OTMLocationObservation.m */,
+				A9DE42611BD5E0A100CE66FE /* OTMMapAnnotation.h */,
+				A9DE42621BD5E0A100CE66FE /* OTMMapAnnotation.m */,
+				A9F746D41B8E03EE005B5836 /* OTMMapViewController.h */,
+				A9F746D51B8E03EE005B5836 /* OTMMapViewController.m */,
+				786CED4F1BD3E7B8003786BB /* OTMObservationsManager.h */,
+				786CED501BD3E7B8003786BB /* OTMObservationsManager.m */,
+				A9FB58411BD35B1500ECB550 /* OTMPeerSharingLedger.h */,
+				A9FB58421BD35B1500ECB550 /* OTMPeerSharingLedger.m */,
+				A9FB58351BD34C9F00ECB550 /* OTMProximityView.h */,
+				A9FB58361BD34C9F00ECB550 /* OTMProximityView.m */,
+				A97D4E7A1BE8FFCF003686A1 /* OTMSimpleBeaconAlgorithm.h */,
+				A97D4E7B1BE8FFCF003686A1 /* OTMSimpleBeaconAlgorithm.m */,
+				A9AF7E051BDDC61700E297CE /* OTMSimpleLocationAlgorithm.h */,
+				A9AF7E061BDDC61700E297CE /* OTMSimpleLocationAlgorithm.m */,
+				A9DE42491BD49C4800CE66FE /* OTMSourcePickerController.h */,
+				A9DE424A1BD49C4900CE66FE /* OTMSourcePickerController.m */,
+				A9AF7E011BDB059500E297CE /* OTMSourceTableViewCell.h */,
+				A9AF7E021BDB059500E297CE /* OTMSourceTableViewCell.m */,
+				A9DE426D1BD5E7EC00CE66FE /* OTMTimeTableViewCell.h */,
+				A9DE426E1BD5E7EC00CE66FE /* OTMTimeTableViewCell.m */,
+				A9DE42721BD5F01F00CE66FE /* UIView+OTMDateAndTimeFormatter.h */,
+				A9DE42731BD5F01F00CE66FE /* UIView+OTMDateAndTimeFormatter.m */,
+				A9FB583B1BD3579900ECB550 /* tests */,
+				A97D4E7F1BE9BC4D003686A1 /* OTMConnectPeerCell.h */,
+				A97D4E801BE9BC4D003686A1 /* OTMConnectPeerCell.m */,
+				A97D4EA21BEBFA94003686A1 /* OTMBubbleCalendarView.h */,
+				A97D4EA31BEBFA94003686A1 /* OTMBubbleCalendarView.m */,
+				A97D4EA61BEE8FB3003686A1 /* OTMCheck.h */,
+				A97D4EA71BEE8FB3003686A1 /* OTMCheck.m */,
+				A97D4EAA1BEEF130003686A1 /* OTMTitleView.h */,
+				A97D4EAB1BEEF130003686A1 /* OTMTitleView.m */,
+				A9A8BED11BF38667001E48B0 /* OTMRSSICalibrationAlgorithm.h */,
+				A9A8BED21BF38667001E48B0 /* OTMRSSICalibrationAlgorithm.m */,
+			);
+			path = OTM;
+			sourceTree = "<group>";
+		};
+		A9FB58391BD355EF00ECB550 /* igorsales */ = {
+			isa = PBXGroup;
+			children = (
+				78E9E6A41B961A1E00154009 /* ISAnimator.h */,
+				78E9E6A51B961A1E00154009 /* ISAnimator.m */,
+				A9F746F81B8F90F4005B5836 /* ISAudioPortMonitor.h */,
+				A9F746F91B8F90F4005B5836 /* ISAudioPortMonitor.m */,
+				78E9E6B01B962F8100154009 /* ISBackgroundColourAnimator.h */,
+				78E9E6B11B962F8100154009 /* ISBackgroundColourAnimator.m */,
+				A9F7470D1B931C54005B5836 /* ISBlurredLabel.h */,
+				A9F7470E1B931C54005B5836 /* ISBlurredLabel.m */,
+				A9F746FC1B8F9AC4005B5836 /* ISBTSourcePickerViewController.h */,
+				A9F746FD1B8F9AC4005B5836 /* ISBTSourcePickerViewController.m */,
+				A9F747001B8FA0E5005B5836 /* ISDismissSegue.h */,
+				A9F747011B8FA0E5005B5836 /* ISDismissSegue.m */,
+				78E9E6AC1B9621FA00154009 /* ISInfoViewController.h */,
+				78E9E6AD1B9621FA00154009 /* ISInfoViewController.m */,
+				A9CBDA451BB70E3000D1AAE9 /* ISKeychain.h */,
+				A9CBDA461BB70E3000D1AAE9 /* ISKeychain.m */,
+				A959460B1BC804C200A51B83 /* ISLog.h */,
+				A959460E1BC87DDB00A51B83 /* ISLogger.h */,
+				A959460F1BC87DDB00A51B83 /* ISLogger.m */,
+				A9CBDA3D1BB63B9100D1AAE9 /* ISNotesManager.h */,
+				A9CBDA3E1BB63B9100D1AAE9 /* ISNotesManager.m */,
+				A95945E21BC6E21E00A51B83 /* ISPeerMessage.h */,
+				A95945E31BC6E21E00A51B83 /* ISPeerMessage.m */,
+				A9CBDA411BB6D01B00D1AAE9 /* ISPKey.h */,
+				A9CBDA421BB6D01B00D1AAE9 /* ISPKey.m */,
+				78E9E6A81B961F4E00154009 /* ISRevealAndMoveAnimator.h */,
+				78E9E6A91B961F4E00154009 /* ISRevealAndMoveAnimator.m */,
+				A9D7A94B1BBC3E81006E8C82 /* NSBundle+Identifier.h */,
+				A9D7A94C1BBC3E81006E8C82 /* NSBundle+Identifier.m */,
+				A9CBDA491BB71CBB00D1AAE9 /* NSData+Digest.h */,
+				A9CBDA4A1BB71CBB00D1AAE9 /* NSData+Digest.m */,
+				A9978AD01BBD724E00179B7F /* NSString+URLEncoding.h */,
+				A9978AD11BBD724E00179B7F /* NSString+URLEncoding.m */,
+				A9FB580B1BD0336A00ECB550 /* NSString+UUIDColour.h */,
+				A9FB580C1BD0336A00ECB550 /* NSString+UUIDColour.m */,
+				A98C05401BBDC7F500BD7A04 /* NSURLRequest+NotesAPI.h */,
+				A98C05411BBDC7F500BD7A04 /* NSURLRequest+NotesAPI.m */,
+				A9FB583A1BD3578300ECB550 /* tests */,
+				786CED6A1BD3F0D7003786BB /* ISDisclosureButton.h */,
+				786CED6B1BD3F0D7003786BB /* ISDisclosureButton.m */,
+				A9DE42651BD5E41100CE66FE /* NSDate+Helpers.h */,
+				A9DE42661BD5E41100CE66FE /* NSDate+Helpers.m */,
+				A9AF7DF61BD9D6D800E297CE /* NSArray+CollectSelect.h */,
+				A9AF7DF71BD9D6D800E297CE /* NSArray+CollectSelect.m */,
+				A93091EC1BE15C0C00F451A2 /* UIImage+Tint.h */,
+				A93091ED1BE15C0C00F451A2 /* UIImage+Tint.m */,
+				A930920C1BE292E800F451A2 /* NSTimer+Shortcut.h */,
+				A930920D1BE292E800F451A2 /* NSTimer+Shortcut.m */,
+			);
+			path = igorsales;
+			sourceTree = "<group>";
+		};
+		A9FB583A1BD3578300ECB550 /* tests */ = {
+			isa = PBXGroup;
+			children = (
+				786CED711BD40514003786BB /* ISKeychainTest.m */,
+				786CED721BD40514003786BB /* ISNotesManagerTest.m */,
+				786CED731BD40514003786BB /* NSBundleIdentifierTest.m */,
+				786CED741BD40514003786BB /* NSStringURLEncodingTest.m */,
+			);
+			path = tests;
+			sourceTree = "<group>";
+		};
+		A9FB583B1BD3579900ECB550 /* tests */ = {
+			isa = PBXGroup;
+			children = (
+				A93092081BE28E4E00F451A2 /* OTMBeaconIntegrationTest.m */,
+				A9FB584A1BD35B6100ECB550 /* OTMDataModelTest.m */,
+				A9FB584B1BD35B6100ECB550 /* OTMLocationManagerTest.m */,
+				A9FB584C1BD35B6100ECB550 /* OTMLocationObservationTest.m */,
+				A9FB584D1BD35B6100ECB550 /* OTMPeerSharingLedgerTest.m */,
+			);
+			path = tests;
+			sourceTree = "<group>";
+		};
+		A9FB58581BD35CEF00ECB550 /* Resoources */ = {
+			isa = PBXGroup;
+			children = (
+				A93091F01BE1B92500F451A2 /* LicensePlate.ttf */,
+				A9AF7DFB1BDAC53F00E297CE /* pop.mp3 */,
+				A9CBDA211BB21E6100D1AAE9 /* OTMBeaconPortTypes.plist */,
+				A9FB581C1BD334BD00ECB550 /* CalendarPin.xib */,
+				A9FB58311BD3473300ECB550 /* CalendarWithTimePin.xib */,
+				A9CBDA161BB1DB2300D1AAE9 /* OTMBeaconServices.plist */,
+				A9FB58331BD3485E00ECB550 /* digital-7.ttf */,
+				A9F746DA1B8E03EE005B5836 /* Images.xcassets */,
+				A9FB585A1BD35E1500ECB550 /* LaunchScreen.xib */,
+				A9FB585E1BD35E2100ECB550 /* Main.storyboard */,
+				A9DE42511BD49D9700CE66FE /* CalendarHeader.xib */,
+				A93091E01BE1529900F451A2 /* CarPin.xib */,
+				A97D4E9E1BEBF7CA003686A1 /* ThoughtBubble.xib */,
+				A97D4EAE1BEEF173003686A1 /* TitleView.xib */,
+			);
+			name = Resoources;
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		A9FB58591BD35CFE00ECB550 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				A9F746F61B8E1A22005B5836 /* AVFoundation.framework */,
+				A9F746F31B8E0404005B5836 /* ExternalAccessory.framework */,
+				A9CBDA4F1BB8EA3E00D1AAE9 /* Security.framework */,
+				A9CBDA2E1BB2DF9E00D1AAE9 /* MapKit.framework */,
+				2AB2AE0C26F5F9C9410E3C43 /* Pods_CarBeacon.framework */,
+				9CB67B12594F6D5F917A80C6 /* Pods_CarBeaconTests.framework */,
+				9781EEA2F3A432AF5F526E23 /* Pods_CarBeaconUnitTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		A95945F41BC737CD00A51B83 /* CarBeaconTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A95945FC1BC737CD00A51B83 /* Build configuration list for PBXNativeTarget "CarBeaconTests" */;
+			buildPhases = (
+				1861E47D0FC8EBBE5216B642 /* [CP] Check Pods Manifest.lock */,
+				A95945F11BC737CD00A51B83 /* Sources */,
+				A95945F21BC737CD00A51B83 /* Frameworks */,
+				A95945F31BC737CD00A51B83 /* Resources */,
+				5D38BB6AC3EB261ADD4B4107 /* [CP] Embed Pods Frameworks */,
+				714CCF9B7E7F5CE803973EF6 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A95945FB1BC737CD00A51B83 /* PBXTargetDependency */,
+			);
+			name = CarBeaconTests;
+			productName = BTConnTests;
+			productReference = A95945F51BC737CD00A51B83 /* CarBeacon.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		A9F746C91B8E03EE005B5836 /* CarBeacon */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A9F746ED1B8E03EE005B5836 /* Build configuration list for PBXNativeTarget "CarBeacon" */;
+			buildPhases = (
+				5698F633C7552241E7DC2E11 /* [CP] Check Pods Manifest.lock */,
+				A9F746C61B8E03EE005B5836 /* Sources */,
+				A9F746C71B8E03EE005B5836 /* Frameworks */,
+				A9F746C81B8E03EE005B5836 /* Resources */,
+				A9FB582D1BD339BF00ECB550 /* Embed Frameworks */,
+				F8C8B2ED4A760046D4065EA4 /* [CP] Embed Pods Frameworks */,
+				D08042AF997F72B917A436D2 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = CarBeacon;
+			productName = BTConnTest;
+			productReference = A9F746CA1B8E03EE005B5836 /* CarBeacon.app */;
+			productType = "com.apple.product-type.application";
+		};
+		A9F746E21B8E03EE005B5836 /* CarBeaconUnitTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A9F746F01B8E03EE005B5836 /* Build configuration list for PBXNativeTarget "CarBeaconUnitTests" */;
+			buildPhases = (
+				1828A32BB2EFB6C8AE476926 /* [CP] Check Pods Manifest.lock */,
+				A9F746DF1B8E03EE005B5836 /* Sources */,
+				A9F746E01B8E03EE005B5836 /* Frameworks */,
+				A9F746E11B8E03EE005B5836 /* Resources */,
+				7ACD9A777DB85827B71A67D7 /* [CP] Embed Pods Frameworks */,
+				EE3A8E2FA0ABAB5248CA2DDE /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A959460D1BC819D100A51B83 /* PBXTargetDependency */,
+			);
+			name = CarBeaconUnitTests;
+			productName = BTConnTestTests;
+			productReference = A9F746E31B8E03EE005B5836 /* CarBeacon.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		A9F746C21B8E03EE005B5836 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = OTM;
+				LastUpgradeCheck = 0700;
+				ORGANIZATIONNAME = "org.ble-kit";
+				TargetAttributes = {
+					A95945F41BC737CD00A51B83 = {
+						CreatedOnToolsVersion = 7.0.1;
+						TestTargetID = A9F746C91B8E03EE005B5836;
+					};
+					A9F746C91B8E03EE005B5836 = {
+						CreatedOnToolsVersion = 6.4;
+						DevelopmentTeam = 8D8BRSGS55;
+						SystemCapabilities = {
+							com.apple.BackgroundModes = {
+								enabled = 1;
+							};
+							com.apple.Push = {
+								enabled = 1;
+							};
+							com.apple.iCloud = {
+								enabled = 1;
+							};
+						};
+					};
+					A9F746E21B8E03EE005B5836 = {
+						CreatedOnToolsVersion = 6.4;
+					};
+				};
+			};
+			buildConfigurationList = A9F746C51B8E03EE005B5836 /* Build configuration list for PBXProject "CarBeacon" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = A9F746C11B8E03EE005B5836;
+			productRefGroup = A9F746CB1B8E03EE005B5836 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				A9F746C91B8E03EE005B5836 /* CarBeacon */,
+				A95945F41BC737CD00A51B83 /* CarBeaconTests */,
+				A9F746E21B8E03EE005B5836 /* CarBeaconUnitTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		A95945F31BC737CD00A51B83 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A9F746C81B8E03EE005B5836 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A9FB58341BD3485E00ECB550 /* digital-7.ttf in Resources */,
+				A93091F11BE1B92500F451A2 /* LicensePlate.ttf in Resources */,
+				A9CBDA221BB21E6100D1AAE9 /* OTMBeaconPortTypes.plist in Resources */,
+				A9FB581D1BD334BD00ECB550 /* CalendarPin.xib in Resources */,
+				A93091E21BE1529900F451A2 /* CarPin.xib in Resources */,
+				A97D4EA01BEBF7CA003686A1 /* ThoughtBubble.xib in Resources */,
+				A9FB58321BD3473300ECB550 /* CalendarWithTimePin.xib in Resources */,
+				A97D4EB01BEEF173003686A1 /* TitleView.xib in Resources */,
+				A9AF7DFC1BDAC53F00E297CE /* pop.mp3 in Resources */,
+				A9F746DB1B8E03EE005B5836 /* Images.xcassets in Resources */,
+				A9FB58601BD35E2100ECB550 /* Main.storyboard in Resources */,
+				A9FB585C1BD35E1500ECB550 /* LaunchScreen.xib in Resources */,
+				A9DE42531BD49D9700CE66FE /* CalendarHeader.xib in Resources */,
+				A9CBDA171BB1DB2300D1AAE9 /* OTMBeaconServices.plist in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A9F746E11B8E03EE005B5836 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A9DE42541BD49D9700CE66FE /* CalendarHeader.xib in Resources */,
+				A9FB585D1BD35E1500ECB550 /* LaunchScreen.xib in Resources */,
+				A93091F21BE1B92500F451A2 /* LicensePlate.ttf in Resources */,
+				A9FB58611BD35E2100ECB550 /* Main.storyboard in Resources */,
+				A97D4EA11BEBF7CA003686A1 /* ThoughtBubble.xib in Resources */,
+				A9CBDA181BB1DB2300D1AAE9 /* OTMBeaconServices.plist in Resources */,
+				A9CBDA231BB21E6100D1AAE9 /* OTMBeaconPortTypes.plist in Resources */,
+				A97D4EB11BEEF173003686A1 /* TitleView.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		1828A32BB2EFB6C8AE476926 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		1861E47D0FC8EBBE5216B642 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		5698F633C7552241E7DC2E11 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		5D38BB6AC3EB261ADD4B4107 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-CarBeaconTests/Pods-CarBeaconTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		714CCF9B7E7F5CE803973EF6 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-CarBeaconTests/Pods-CarBeaconTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		7ACD9A777DB85827B71A67D7 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-CarBeaconUnitTests/Pods-CarBeaconUnitTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D08042AF997F72B917A436D2 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-CarBeacon/Pods-CarBeacon-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		EE3A8E2FA0ABAB5248CA2DDE /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-CarBeaconUnitTests/Pods-CarBeaconUnitTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F8C8B2ED4A760046D4065EA4 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-CarBeacon/Pods-CarBeacon-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		A95945F11BC737CD00A51B83 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				786CED7E1BD40573003786BB /* ISNotesManagerTest.m in Sources */,
+				A930920B1BE28FA800F451A2 /* OTMBeaconIntegrationTest.m in Sources */,
+				786CED7F1BD40573003786BB /* NSBundleIdentifierTest.m in Sources */,
+				786CED801BD40573003786BB /* NSStringURLEncodingTest.m in Sources */,
+				786CED7D1BD40573003786BB /* ISKeychainTest.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A9F746C61B8E03EE005B5836 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A9FB58371BD34C9F00ECB550 /* OTMProximityView.m in Sources */,
+				A93091E61BE152EC00F451A2 /* OTMCarPinAnnotationView.m in Sources */,
+				A9FB58271BD336C500ECB550 /* OTMCalendarPinAnnotationView.m in Sources */,
+				A97D4EA81BEE8FB3003686A1 /* OTMCheck.m in Sources */,
+				786CED6E1BD40424003786BB /* OTMMapViewController.m in Sources */,
+				A95946011BC7386E00A51B83 /* NSBundle+Identifier.m in Sources */,
+				A9FB58481BD35B3C00ECB550 /* OTMLocationMonitor.m in Sources */,
+				A9AF7DF81BD9D6D800E297CE /* NSArray+CollectSelect.m in Sources */,
+				A9CBDA4B1BB71CBB00D1AAE9 /* NSData+Digest.m in Sources */,
+				A97D4E771BE8FFA9003686A1 /* OTMBeaconAlgorithm.m in Sources */,
+				A9EB2F111BC4509D00971F6B /* OTMLocationManager.m in Sources */,
+				A9DE424B1BD49C4900CE66FE /* OTMSourcePickerController.m in Sources */,
+				A9DE42741BD5F01F00CE66FE /* UIView+OTMDateAndTimeFormatter.m in Sources */,
+				A9CBDA471BB70E3100D1AAE9 /* ISKeychain.m in Sources */,
+				A93091EA1BE15BB700F451A2 /* OTMBeaconsViewController.m in Sources */,
+				A9CBDA3F1BB63B9100D1AAE9 /* ISNotesManager.m in Sources */,
+				78E9E6A61B961A1E00154009 /* ISAnimator.m in Sources */,
+				A9DE426F1BD5E7EC00CE66FE /* OTMTimeTableViewCell.m in Sources */,
+				A9F746FE1B8F9AC4005B5836 /* ISBTSourcePickerViewController.m in Sources */,
+				A97D4EA41BEBFA94003686A1 /* OTMBubbleCalendarView.m in Sources */,
+				A9DE426B1BD5E6E300CE66FE /* OTMCalendarHeaderView.m in Sources */,
+				786CED6C1BD3F0D7003786BB /* ISDisclosureButton.m in Sources */,
+				A97D4EAC1BEEF130003686A1 /* OTMTitleView.m in Sources */,
+				A97D4E7C1BE8FFCF003686A1 /* OTMSimpleBeaconAlgorithm.m in Sources */,
+				A97D4E811BE9BC4D003686A1 /* OTMConnectPeerCell.m in Sources */,
+				A93092061BE28E3600F451A2 /* OTMBeaconConfigurationPort.m in Sources */,
+				A9DE42671BD5E41100CE66FE /* NSDate+Helpers.m in Sources */,
+				A9AF7DFF1BDB01AE00E297CE /* NSDate+ServerDate.m in Sources */,
+				A99DB0BE1BC1EEBB001D316D /* OTMLocationObservation.m in Sources */,
+				A93092041BE28E3600F451A2 /* OTMBeaconIdentificationPort.m in Sources */,
+				A9F747021B8FA0E5005B5836 /* ISDismissSegue.m in Sources */,
+				A9AF7E031BDB059500E297CE /* OTMSourceTableViewCell.m in Sources */,
+				78E9E6AA1B961F4E00154009 /* ISRevealAndMoveAnimator.m in Sources */,
+				A930921C1BE301CF00F451A2 /* OTMBeaconConfigurationSliderCell.m in Sources */,
+				A9FB58301BD33F6D00ECB550 /* OTMLocationDatabase.m in Sources */,
+				A93091F51BE26E1000F451A2 /* OTMBeaconsViewCell.m in Sources */,
+				A930922A1BE7D00A00F451A2 /* OTMBeaconsListController.m in Sources */,
+				A9F746D31B8E03EE005B5836 /* AppDelegate.m in Sources */,
+				A930921A1BE301CF00F451A2 /* OTMBeaconConfiguration.m in Sources */,
+				A9F746FA1B8F90F4005B5836 /* ISAudioPortMonitor.m in Sources */,
+				A9DE42631BD5E0A100CE66FE /* OTMMapAnnotation.m in Sources */,
+				A97D4E851BE9BD6A003686A1 /* OTMConnectViewController.m in Sources */,
+				A9F746D01B8E03EE005B5836 /* main.m in Sources */,
+				A9FB58451BD35B1500ECB550 /* OTMPeerSharingLedger.m in Sources */,
+				A98C05421BBDC7F500BD7A04 /* NSURLRequest+NotesAPI.m in Sources */,
+				A9AF7DF31BD9776400E297CE /* OTMLocationAlgorithm.m in Sources */,
+				A9AF7E071BDDC61700E297CE /* OTMSimpleLocationAlgorithm.m in Sources */,
+				A93091EE1BE15C0C00F451A2 /* UIImage+Tint.m in Sources */,
+				A930921E1BE301CF00F451A2 /* OTMBeaconConfigurationViewController.m in Sources */,
+				A9DE424F1BD49C6D00CE66FE /* OTMDateAndTimeViewController.m in Sources */,
+				A930920E1BE292E800F451A2 /* NSTimer+Shortcut.m in Sources */,
+				78E9E6B21B962F8100154009 /* ISBackgroundColourAnimator.m in Sources */,
+				A9978AD21BBD724E00179B7F /* NSString+URLEncoding.m in Sources */,
+				A9CBDA431BB6D01B00D1AAE9 /* ISPKey.m in Sources */,
+				A93092111BE2A17C00F451A2 /* OTMBeaconLedger.m in Sources */,
+				A95945E41BC6E21E00A51B83 /* ISPeerMessage.m in Sources */,
+				A9A8BED31BF38667001E48B0 /* OTMRSSICalibrationAlgorithm.m in Sources */,
+				A95946101BC87DDB00A51B83 /* ISLogger.m in Sources */,
+				78E9E6AE1B9621FA00154009 /* ISInfoViewController.m in Sources */,
+				A93092221BE302D700F451A2 /* OTMBeaconConfigurationReadingCell.m in Sources */,
+				A9FB580D1BD0336A00ECB550 /* NSString+UUIDColour.m in Sources */,
+				786CED511BD3E7B8003786BB /* OTMObservationsManager.m in Sources */,
+				A9FB58431BD35B1500ECB550 /* OTMDataModel.m in Sources */,
+				A93092021BE28E3600F451A2 /* OTMBeaconConfigurationService.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A9F746DF1B8E03EE005B5836 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A9DE426C1BD5E6E300CE66FE /* OTMCalendarHeaderView.m in Sources */,
+				A9DE42681BD5E41100CE66FE /* NSDate+Helpers.m in Sources */,
+				A93091E71BE152EC00F451A2 /* OTMCarPinAnnotationView.m in Sources */,
+				A93092051BE28E3600F451A2 /* OTMBeaconIdentificationPort.m in Sources */,
+				786CED6F1BD40425003786BB /* OTMMapViewController.m in Sources */,
+				A95946031BC73A2700A51B83 /* NSString+URLEncoding.m in Sources */,
+				A9FB58511BD35B6100ECB550 /* OTMLocationManagerTest.m in Sources */,
+				786CED761BD40514003786BB /* ISKeychainTest.m in Sources */,
+				A9DE42711BD5EA8800CE66FE /* OTMLocationDatabase.m in Sources */,
+				A95945F01BC7363600A51B83 /* NSData+Digest.m in Sources */,
+				786CED7A1BD40514003786BB /* NSBundleIdentifierTest.m in Sources */,
+				786CED7C1BD40514003786BB /* NSStringURLEncodingTest.m in Sources */,
+				A97D4E821BE9BC4D003686A1 /* OTMConnectPeerCell.m in Sources */,
+				A95945ED1BC7250800A51B83 /* NSURLRequest+NotesAPI.m in Sources */,
+				A97D4E781BE8FFA9003686A1 /* OTMBeaconAlgorithm.m in Sources */,
+				A9DE42701BD5E7EC00CE66FE /* OTMTimeTableViewCell.m in Sources */,
+				A9AF7DF41BD9776400E297CE /* OTMLocationAlgorithm.m in Sources */,
+				A9AF7DF91BD9D6D800E297CE /* NSArray+CollectSelect.m in Sources */,
+				A95945EC1BC724E100A51B83 /* NSBundle+Identifier.m in Sources */,
+				A97D4E861BE9BD6A003686A1 /* OTMConnectViewController.m in Sources */,
+				A9FB580E1BD0336A00ECB550 /* NSString+UUIDColour.m in Sources */,
+				A97D4EAD1BEEF130003686A1 /* OTMTitleView.m in Sources */,
+				A9DE42641BD5E0A100CE66FE /* OTMMapAnnotation.m in Sources */,
+				A95945E81BC724B700A51B83 /* ISKeychain.m in Sources */,
+				786CED781BD40514003786BB /* ISNotesManagerTest.m in Sources */,
+				A95945E91BC724B700A51B83 /* ISPKey.m in Sources */,
+				A95945E51BC724A600A51B83 /* ISPeerMessage.m in Sources */,
+				A95945E61BC724A600A51B83 /* OTMLocationObservation.m in Sources */,
+				A930921F1BE301CF00F451A2 /* OTMBeaconConfigurationViewController.m in Sources */,
+				A97D4EA51BEBFA94003686A1 /* OTMBubbleCalendarView.m in Sources */,
+				A93092121BE2A17C00F451A2 /* OTMBeaconLedger.m in Sources */,
+				A9FB58531BD35B6100ECB550 /* OTMLocationObservationTest.m in Sources */,
+				A93092071BE28E3600F451A2 /* OTMBeaconConfigurationPort.m in Sources */,
+				A9DE42751BD5F01F00CE66FE /* UIView+OTMDateAndTimeFormatter.m in Sources */,
+				A93092231BE302D700F451A2 /* OTMBeaconConfigurationReadingCell.m in Sources */,
+				A97D4E7D1BE8FFCF003686A1 /* OTMSimpleBeaconAlgorithm.m in Sources */,
+				A95945E71BC724A600A51B83 /* ISNotesManager.m in Sources */,
+				A93092031BE28E3600F451A2 /* OTMBeaconConfigurationService.m in Sources */,
+				A9FB58491BD35B3C00ECB550 /* OTMLocationMonitor.m in Sources */,
+				A93091EF1BE15C0C00F451A2 /* UIImage+Tint.m in Sources */,
+				A9DE424C1BD49C4900CE66FE /* OTMSourcePickerController.m in Sources */,
+				A930922B1BE7D00A00F451A2 /* OTMBeaconsListController.m in Sources */,
+				A9FB58561BD35BAF00ECB550 /* OTMDataModelTest.m in Sources */,
+				786CED521BD3E7B8003786BB /* OTMObservationsManager.m in Sources */,
+				A930921B1BE301CF00F451A2 /* OTMBeaconConfiguration.m in Sources */,
+				A930921D1BE301CF00F451A2 /* OTMBeaconConfigurationSliderCell.m in Sources */,
+				A9AF7E001BDB01AE00E297CE /* NSDate+ServerDate.m in Sources */,
+				A93091F61BE26E1000F451A2 /* OTMBeaconsViewCell.m in Sources */,
+				7878D8931BD406F5009F5C29 /* OTMLocationManager.m in Sources */,
+				A97D4EA91BEE8FB3003686A1 /* OTMCheck.m in Sources */,
+				A9AF7E081BDDC61700E297CE /* OTMSimpleLocationAlgorithm.m in Sources */,
+				A9FB58441BD35B1500ECB550 /* OTMDataModel.m in Sources */,
+				A9FB58551BD35B6100ECB550 /* OTMPeerSharingLedgerTest.m in Sources */,
+				A9A8BED41BF38667001E48B0 /* OTMRSSICalibrationAlgorithm.m in Sources */,
+				A9AF7E041BDB059500E297CE /* OTMSourceTableViewCell.m in Sources */,
+				A93091EB1BE15BB700F451A2 /* OTMBeaconsViewController.m in Sources */,
+				A95946111BC87DDB00A51B83 /* ISLogger.m in Sources */,
+				A9FB58461BD35B1500ECB550 /* OTMPeerSharingLedger.m in Sources */,
+				A9DE42501BD49C6D00CE66FE /* OTMDateAndTimeViewController.m in Sources */,
+				A930922C1BE7E85500F451A2 /* OTMProximityView.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		A95945FB1BC737CD00A51B83 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A9F746C91B8E03EE005B5836 /* CarBeacon */;
+			targetProxy = A95945FA1BC737CD00A51B83 /* PBXContainerItemProxy */;
+		};
+		A959460D1BC819D100A51B83 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A9F746C91B8E03EE005B5836 /* CarBeacon */;
+			targetProxy = A959460C1BC819D100A51B83 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		A93091E01BE1529900F451A2 /* CarPin.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A93091E11BE1529900F451A2 /* Base */,
+			);
+			name = CarPin.xib;
+			sourceTree = "<group>";
+		};
+		A97D4E9E1BEBF7CA003686A1 /* ThoughtBubble.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A97D4E9F1BEBF7CA003686A1 /* Base */,
+			);
+			name = ThoughtBubble.xib;
+			sourceTree = "<group>";
+		};
+		A97D4EAE1BEEF173003686A1 /* TitleView.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A97D4EAF1BEEF173003686A1 /* Base */,
+			);
+			name = TitleView.xib;
+			sourceTree = "<group>";
+		};
+		A9DE42511BD49D9700CE66FE /* CalendarHeader.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A9DE42521BD49D9700CE66FE /* Base */,
+			);
+			name = CalendarHeader.xib;
+			sourceTree = "<group>";
+		};
+		A9FB585A1BD35E1500ECB550 /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A9FB585B1BD35E1500ECB550 /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+		A9FB585E1BD35E2100ECB550 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A9FB585F1BD35E2100ECB550 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		A95945FD1BC737CD00A51B83 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 71288D6AD9B57C6B696694B2 /* Pods-CarBeaconTests.debug.xcconfig */;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+					"NOTES_SERVER_URL=\"@\\\"http://localhost:56789\\\"\"",
+				);
+				INFOPLIST_FILE = tests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.ble-kit.CarBeaconTests";
+				PRODUCT_NAME = CarBeacon;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CarBeacon.app/CarBeacon";
+			};
+			name = Debug;
+		};
+		A95945FE1BC737CD00A51B83 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = EBF1E7686C25E3B8212D512B /* Pods-CarBeaconTests.release.xcconfig */;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = tests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.ble-kit.CarBeaconTests";
+				PRODUCT_NAME = CarBeacon;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CarBeacon.app/CarBeacon";
+			};
+			name = Release;
+		};
+		A9F746EB1B8E03EE005B5836 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		A9F746EC1B8E03EE005B5836 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		A9F746EE1B8E03EE005B5836 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = CA21608571178D2542DFE962 /* Pods-CarBeacon.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = Resources/CarBeacon.entitlements;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				INFOPLIST_FILE = Resources/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.ble-kit.CarBeacon";
+				PRODUCT_NAME = CarBeacon;
+				PROVISIONING_PROFILE = "";
+			};
+			name = Debug;
+		};
+		A9F746EF1B8E03EE005B5836 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8FD3A0825CC22F278B9E3343 /* Pods-CarBeacon.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = Resources/CarBeacon.entitlements;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				INFOPLIST_FILE = Resources/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.ble-kit.CarBeacon";
+				PRODUCT_NAME = CarBeacon;
+				PROVISIONING_PROFILE = "";
+			};
+			name = Release;
+		};
+		A9F746F11B8E03EE005B5836 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A9F75CBDE526BDBFC53AEA9A /* Pods-CarBeaconUnitTests.debug.xcconfig */;
+			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+					"IS_UNDER_TEST=1",
+					"NOTES_SERVER_URL=\"@\\\"http://localhost:56789\\\"\"",
+					"IS_UNDER_UNIT_TEST=1",
+				);
+				INFOPLIST_FILE = tests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.ble-kit.$(PRODUCT_NAME:rfc1034identifier)";
+				PRODUCT_NAME = CarBeacon;
+			};
+			name = Debug;
+		};
+		A9F746F21B8E03EE005B5836 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F51E457BE8960E9EA85F3994 /* Pods-CarBeaconUnitTests.release.xcconfig */;
+			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = tests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.ble-kit.$(PRODUCT_NAME:rfc1034identifier)";
+				PRODUCT_NAME = CarBeacon;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		A95945FC1BC737CD00A51B83 /* Build configuration list for PBXNativeTarget "CarBeaconTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A95945FD1BC737CD00A51B83 /* Debug */,
+				A95945FE1BC737CD00A51B83 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A9F746C51B8E03EE005B5836 /* Build configuration list for PBXProject "CarBeacon" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A9F746EB1B8E03EE005B5836 /* Debug */,
+				A9F746EC1B8E03EE005B5836 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A9F746ED1B8E03EE005B5836 /* Build configuration list for PBXNativeTarget "CarBeacon" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A9F746EE1B8E03EE005B5836 /* Debug */,
+				A9F746EF1B8E03EE005B5836 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A9F746F01B8E03EE005B5836 /* Build configuration list for PBXNativeTarget "CarBeaconUnitTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A9F746F11B8E03EE005B5836 /* Debug */,
+				A9F746F21B8E03EE005B5836 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = A9F746C21B8E03EE005B5836 /* Project object */;
+}

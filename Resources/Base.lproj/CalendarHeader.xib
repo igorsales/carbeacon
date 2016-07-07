@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="8191" systemVersion="14F1021" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8154"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="0mQ-rI-brE" customClass="OTMCalendarHeaderView">
+            <rect key="frame" x="0.0" y="0.0" width="110" height="86"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="CalendarHeader" translatesAutoresizingMaskIntoConstraints="NO" id="Qtc-VG-udd">
+                    <rect key="frame" x="8" y="0.0" width="93" height="86"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="86" id="quN-xR-4if"/>
+                    </constraints>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Month" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="Onn-JT-5ce">
+                    <rect key="frame" x="8" y="12" width="93" height="21"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="93" id="AEx-b4-MaX"/>
+                        <constraint firstAttribute="height" constant="21" id="hc4-wb-MeF"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="17"/>
+                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="31" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="S4A-h1-LJw">
+                    <rect key="frame" x="8" y="40" width="93" height="38"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="38" id="P41-u5-OCv"/>
+                        <constraint firstAttribute="width" constant="93" id="r9Y-PK-65x"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="33"/>
+                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <constraints>
+                <constraint firstItem="Onn-JT-5ce" firstAttribute="top" secondItem="0mQ-rI-brE" secondAttribute="top" constant="12" id="4Ed-yS-qyy"/>
+                <constraint firstItem="S4A-h1-LJw" firstAttribute="leading" secondItem="0mQ-rI-brE" secondAttribute="leading" constant="8" id="5nG-es-Sm1"/>
+                <constraint firstItem="S4A-h1-LJw" firstAttribute="top" secondItem="Onn-JT-5ce" secondAttribute="bottom" constant="7" id="6Aa-Lm-opR"/>
+                <constraint firstItem="Qtc-VG-udd" firstAttribute="leading" secondItem="0mQ-rI-brE" secondAttribute="leading" constant="8" id="ep8-VO-elC"/>
+                <constraint firstItem="Onn-JT-5ce" firstAttribute="leading" secondItem="0mQ-rI-brE" secondAttribute="leading" constant="8" id="uhg-q2-bOL"/>
+                <constraint firstItem="Qtc-VG-udd" firstAttribute="top" secondItem="0mQ-rI-brE" secondAttribute="top" id="wlt-kY-swn"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <userDefinedRuntimeAttributes>
+                <userDefinedRuntimeAttribute type="color" keyPath="contentView.backgroundColor">
+                    <color key="value" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                </userDefinedRuntimeAttribute>
+            </userDefinedRuntimeAttributes>
+            <connections>
+                <outlet property="dayLabel" destination="S4A-h1-LJw" id="v6C-V5-u8Q"/>
+                <outlet property="monthLabel" destination="Onn-JT-5ce" id="uVT-1O-9yB"/>
+            </connections>
+            <point key="canvasLocation" x="334" y="413"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="CalendarHeader" width="93" height="86"/>
+    </resources>
+</document>

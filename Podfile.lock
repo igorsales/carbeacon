@@ -1,0 +1,21 @@
+PODS:
+  - BLEKit (1.0.0)
+
+DEPENDENCIES:
+  - BLEKit (from `https://github.com/igorsales/BLEKit.git`)
+
+EXTERNAL SOURCES:
+  BLEKit:
+    :git: https://github.com/igorsales/BLEKit.git
+
+CHECKOUT OPTIONS:
+  BLEKit:
+    :commit: 01adba6684a09d7c99d220fa57d85f3845e0d627
+    :git: https://github.com/igorsales/BLEKit.git
+
+SPEC CHECKSUMS:
+  BLEKit: 002aa1f26e3e6d7433ce9c4c16a74724ea9cb8b7
+
+PODFILE CHECKSUM: fb2bc680efafefec7db8ed1468eac3052253065a
+
+COCOAPODS: 1.0.1

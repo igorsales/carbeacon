@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="8191" systemVersion="14F1021" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8154"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <mutableArray key="digital-7.ttf">
+            <string>Digital-7</string>
+        </mutableArray>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="pSU-Ya-FhK" customClass="OTMBubbleCalendarView">
+            <rect key="frame" x="0.0" y="0.0" width="124" height="130"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="BubbleBig" translatesAutoresizingMaskIntoConstraints="NO" id="4yF-Vg-c7g">
+                    <rect key="frame" x="4" y="98" width="19" height="19"/>
+                </imageView>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="BubbleSmall" translatesAutoresizingMaskIntoConstraints="NO" id="uwR-GL-JFc">
+                    <rect key="frame" x="0.0" y="118" width="12" height="12"/>
+                </imageView>
+                <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Ehm-6T-zAV" userLabel="CloudView">
+                    <rect key="frame" x="4" y="0.0" width="120" height="111"/>
+                    <subviews>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="BubbleCloud" translatesAutoresizingMaskIntoConstraints="NO" id="1Ez-lU-54S">
+                            <rect key="frame" x="0.0" y="0.0" width="120" height="111"/>
+                        </imageView>
+                        <imageView userInteractionEnabled="NO" alpha="0.82999999999999996" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="CalendarHeader" translatesAutoresizingMaskIntoConstraints="NO" id="kSq-qd-XZt">
+                            <rect key="frame" x="30" y="21" width="64" height="56"/>
+                        </imageView>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Nov." textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fxc-zA-8Ov">
+                            <rect key="frame" x="30" y="25" width="64" height="21"/>
+                            <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="15"/>
+                            <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="99" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hSJ-mJ-Kz1">
+                            <rect key="frame" x="37" y="42" width="46" height="36"/>
+                            <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="27"/>
+                            <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="TimeHolder" translatesAutoresizingMaskIntoConstraints="NO" id="71r-3S-rmL">
+                            <rect key="frame" x="38" y="73" width="48" height="21"/>
+                        </imageView>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="99:99" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Dm5-mJ-wqL">
+                            <rect key="frame" x="41" y="73" width="42" height="21"/>
+                            <fontDescription key="fontDescription" name="Digital-7" family="Digital-7" pointSize="19"/>
+                            <color key="textColor" red="0.1333333333" green="1" blue="0.027450980390000001" alpha="1" colorSpace="calibratedRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                </view>
+            </subviews>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+            <nil key="simulatedStatusBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="cloudView" destination="Ehm-6T-zAV" id="rXL-Dj-bfe"/>
+                <outlet property="dayLabel" destination="hSJ-mJ-Kz1" id="TpA-Dd-h2w"/>
+                <outlet property="mediumBubbleView" destination="4yF-Vg-c7g" id="5VL-Rv-M1f"/>
+                <outlet property="monthLabel" destination="fxc-zA-8Ov" id="Udf-sA-bRu"/>
+                <outlet property="smallBubbleView" destination="uwR-GL-JFc" id="1GX-x3-Bvx"/>
+                <outlet property="timeLabel" destination="Dm5-mJ-wqL" id="JyE-O8-a8I"/>
+            </connections>
+            <point key="canvasLocation" x="353" y="371"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="BubbleBig" width="19" height="19"/>
+        <image name="BubbleCloud" width="120" height="111"/>
+        <image name="BubbleSmall" width="12" height="12"/>
+        <image name="CalendarHeader" width="93" height="86"/>
+        <image name="TimeHolder" width="80" height="33"/>
+    </resources>
+</document>

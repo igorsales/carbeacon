@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<array>
+	<dict>
+		<key>kBLKServiceUUID</key>
+		<string>FB01F953-0AD5-432C-86B8-7CD64180152B</string>
+		<key>kBLKServiceClass</key>
+		<string>OTMBeaconConfigurationService</string>
+		<key>kBLKServiceCharacteristics</key>
+		<array>
+			<dict>
+				<key>kBLKServiceCharacteristicUUID</key>
+				<string>A2C2B757-6F6A-43CE-9D47-555B0E95A244</string>
+				<key>kBLKServiceCharacteristicPropertyRoot</key>
+				<string>voltagesAndTimeouts</string>
+			</dict>
+			<dict>
+				<key>kBLKServiceCharacteristicUUID</key>
+				<string>47A298BF-193A-4307-98E2-AA0A67CB34E7</string>
+				<key>kBLKServiceCharacteristicPropertyRoot</key>
+				<string>beaconUUID</string>
+			</dict>
+		</array>
+	</dict>
+</array>
+</plist>
